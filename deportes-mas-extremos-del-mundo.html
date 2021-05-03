@@ -1,0 +1,2375 @@
+
+
+<!DOCTYPE html>
+
+
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/getAmp.csp -->
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/getAmp.csp, e:.000166 -->
+
+<html  lang="es-HN">
+
+
+
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/siteGlobals.csp -->
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/siteGlobals.csp, e:.000093 -->
+
+
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/StoryDefault.csp -->
+
+
+
+
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/helper/versiones.csp -->
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/helper/versiones.csp, e:.000083 -->
+
+
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/helper/detectMobileDevice.csp -->
+
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/helper/detectMobileDevice.csp, e:.000067 -->
+
+
+
+<!-- fi:/csp/mediapool/sites/Diez/assets/csp/helper/getCustomFields.csp -->
+
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/csp/helper/getCustomFields.csp, e:.000104 -->
+
+
+
+	<head>
+		<script src="https://cdn.blueconic.net/gohn.js"></script>
+		
+		
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/headfiles/head.csp -->
+
+
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/headfiles/fundingchoices.csp -->
+<script>(function(){/*
+Copyright The Closure Library Authors.
+SPDX-License-Identifier: Apache-2.0
+*/
+'use strict';var g=function(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}},l=this||self,m=/^[\w+/_-]+[=]{0,2}$/,p=null,q=function(){},r=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";
+if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";else if("function"==b&&"undefined"==typeof a.call)return"object";return b},u=function(a,b){function c(){}c.prototype=b.prototype;a.prototype=new c;a.prototype.constructor=a};var v=function(a,b){Object.defineProperty(l,a,{configurable:!1,get:function(){return b},set:q})};var y=function(a,b){this.b=a===w&&b||"";this.a=x},x={},w={};var aa=function(a,b){a.src=b instanceof y&&b.constructor===y&&b.a===x?b.b:"type_error:TrustedResourceUrl";if(null===p)b:{b=l.document;if((b=b.querySelector&&b.querySelector("script[nonce]"))&&(b=b.nonce||b.getAttribute("nonce"))&&m.test(b)){p=b;break b}p=""}b=p;b&&a.setAttribute("nonce",b)};var z=function(){return Math.floor(2147483648*Math.random()).toString(36)+Math.abs(Math.floor(2147483648*Math.random())^+new Date).toString(36)};var A=function(a,b){b=String(b);"application/xhtml+xml"===a.contentType&&(b=b.toLowerCase());return a.createElement(b)},B=function(a){this.a=a||l.document||document};B.prototype.appendChild=function(a,b){a.appendChild(b)};var C=function(a,b,c,d,e,f){try{var k=a.a,h=A(a.a,"SCRIPT");h.async=!0;aa(h,b);k.head.appendChild(h);h.addEventListener("load",function(){e();d&&k.head.removeChild(h)});h.addEventListener("error",function(){0<c?C(a,b,c-1,d,e,f):(d&&k.head.removeChild(h),f())})}catch(n){f()}};var ba=l.atob("aHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vaW1hZ2VzL2ljb25zL21hdGVyaWFsL3N5c3RlbS8xeC93YXJuaW5nX2FtYmVyXzI0ZHAucG5n"),ca=l.atob("WW91IGFyZSBzZWVpbmcgdGhpcyBtZXNzYWdlIGJlY2F1c2UgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlIGlzIGludGVyZmVyaW5nIHdpdGggdGhpcyBwYWdlLg=="),da=l.atob("RGlzYWJsZSBhbnkgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlLCB0aGVuIHJlbG9hZCB0aGlzIHBhZ2Uu"),ea=function(a,b,c){this.b=a;this.f=new B(this.b);this.a=null;this.c=[];this.g=!1;this.i=b;this.h=c},F=function(a){if(a.b.body&&!a.g){var b=
+function(){D(a);l.setTimeout(function(){return E(a,3)},50)};C(a.f,a.i,2,!0,function(){l[a.h]||b()},b);a.g=!0}},D=function(a){for(var b=G(1,5),c=0;c<b;c++){var d=H(a);a.b.body.appendChild(d);a.c.push(d)}b=H(a);b.style.bottom="0";b.style.left="0";b.style.position="fixed";b.style.width=G(100,110).toString()+"%";b.style.zIndex=G(2147483544,2147483644).toString();b.style["background-color"]=I(249,259,242,252,219,229);b.style["box-shadow"]="0 0 12px #888";b.style.color=I(0,10,0,10,0,10);b.style.display=
+"flex";b.style["justify-content"]="center";b.style["font-family"]="Roboto, Arial";c=H(a);c.style.width=G(80,85).toString()+"%";c.style.maxWidth=G(750,775).toString()+"px";c.style.margin="24px";c.style.display="flex";c.style["align-items"]="flex-start";c.style["justify-content"]="center";d=A(a.f.a,"IMG");d.className=z();d.src=ba;d.style.height="24px";d.style.width="24px";d.style["padding-right"]="16px";var e=H(a),f=H(a);f.style["font-weight"]="bold";f.textContent=ca;var k=H(a);k.textContent=da;J(a,
+e,f);J(a,e,k);J(a,c,d);J(a,c,e);J(a,b,c);a.a=b;a.b.body.appendChild(a.a);b=G(1,5);for(c=0;c<b;c++)d=H(a),a.b.body.appendChild(d),a.c.push(d)},J=function(a,b,c){for(var d=G(1,5),e=0;e<d;e++){var f=H(a);b.appendChild(f)}b.appendChild(c);c=G(1,5);for(d=0;d<c;d++)e=H(a),b.appendChild(e)},G=function(a,b){return Math.floor(a+Math.random()*(b-a))},I=function(a,b,c,d,e,f){return"rgb("+G(Math.max(a,0),Math.min(b,255)).toString()+","+G(Math.max(c,0),Math.min(d,255)).toString()+","+G(Math.max(e,0),Math.min(f,
+255)).toString()+")"},H=function(a){a=A(a.f.a,"DIV");a.className=z();return a},E=function(a,b){0>=b||null!=a.a&&0!=a.a.offsetHeight&&0!=a.a.offsetWidth||(fa(a),D(a),l.setTimeout(function(){return E(a,b-1)},50))},fa=function(a){var b=a.c;var c="undefined"!=typeof Symbol&&Symbol.iterator&&b[Symbol.iterator];b=c?c.call(b):{next:g(b)};for(c=b.next();!c.done;c=b.next())(c=c.value)&&c.parentNode&&c.parentNode.removeChild(c);a.c=[];(b=a.a)&&b.parentNode&&b.parentNode.removeChild(b);a.a=null};var ia=function(a,b,c,d,e){var f=ha(c),k=function(n){n.appendChild(f);l.setTimeout(function(){f?(0!==f.offsetHeight&&0!==f.offsetWidth?b():a(),f.parentNode&&f.parentNode.removeChild(f)):a()},d)},h=function(n){document.body?k(document.body):0<n?l.setTimeout(function(){h(n-1)},e):b()};h(3)},ha=function(a){var b=document.createElement("div");b.className=a;b.style.width="1px";b.style.height="1px";b.style.position="absolute";b.style.left="-10000px";b.style.top="-10000px";b.style.zIndex="-10000";return b};var K={},L=null;var M=function(){},N="function"==typeof Uint8Array,O=function(a,b){a.b=null;b||(b=[]);a.j=void 0;a.f=-1;a.a=b;a:{if(b=a.a.length){--b;var c=a.a[b];if(!(null===c||"object"!=typeof c||Array.isArray(c)||N&&c instanceof Uint8Array)){a.g=b-a.f;a.c=c;break a}}a.g=Number.MAX_VALUE}a.i={}},P=[],Q=function(a,b){if(b<a.g){b+=a.f;var c=a.a[b];return c===P?a.a[b]=[]:c}if(a.c)return c=a.c[b],c===P?a.c[b]=[]:c},R=function(a,b,c){a.b||(a.b={});if(!a.b[c]){var d=Q(a,c);d&&(a.b[c]=new b(d))}return a.b[c]};
+M.prototype.h=N?function(){var a=Uint8Array.prototype.toJSON;Uint8Array.prototype.toJSON=function(){var b;void 0===b&&(b=0);if(!L){L={};for(var c="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split(""),d=["+/=","+/","-_=","-_.","-_"],e=0;5>e;e++){var f=c.concat(d[e].split(""));K[e]=f;for(var k=0;k<f.length;k++){var h=f[k];void 0===L[h]&&(L[h]=k)}}}b=K[b];c=[];for(d=0;d<this.length;d+=3){var n=this[d],t=(e=d+1<this.length)?this[d+1]:0;h=(f=d+2<this.length)?this[d+2]:0;k=n>>2;n=(n&
+3)<<4|t>>4;t=(t&15)<<2|h>>6;h&=63;f||(h=64,e||(t=64));c.push(b[k],b[n],b[t]||"",b[h]||"")}return c.join("")};try{return JSON.stringify(this.a&&this.a,S)}finally{Uint8Array.prototype.toJSON=a}}:function(){return JSON.stringify(this.a&&this.a,S)};var S=function(a,b){return"number"!==typeof b||!isNaN(b)&&Infinity!==b&&-Infinity!==b?b:String(b)};M.prototype.toString=function(){return this.a.toString()};var T=function(a){O(this,a)};u(T,M);var U=function(a){O(this,a)};u(U,M);var ja=function(a,b){this.c=new B(a);var c=R(b,T,5);c=new y(w,Q(c,4)||"");this.b=new ea(a,c,Q(b,4));this.a=b},ka=function(a,b,c,d){b=new T(b?JSON.parse(b):null);b=new y(w,Q(b,4)||"");C(a.c,b,3,!1,c,function(){ia(function(){F(a.b);d(!1)},function(){d(!0)},Q(a.a,2),Q(a.a,3),Q(a.a,1))})};var la=function(a,b){V(a,"internal_api_load_with_sb",function(c,d,e){ka(b,c,d,e)});V(a,"internal_api_sb",function(){F(b.b)})},V=function(a,b,c){a=l.btoa(a+b);v(a,c)},W=function(a,b,c){for(var d=[],e=2;e<arguments.length;++e)d[e-2]=arguments[e];e=l.btoa(a+b);e=l[e];if("function"==r(e))e.apply(null,d);else throw Error("API not exported.");};var X=function(a){O(this,a)};u(X,M);var Y=function(a){this.h=window;this.a=a;this.b=Q(this.a,1);this.f=R(this.a,T,2);this.g=R(this.a,U,3);this.c=!1};Y.prototype.start=function(){ma();var a=new ja(this.h.document,this.g);la(this.b,a);na(this)};
+var ma=function(){var a=function(){if(!l.frames.googlefcPresent)if(document.body){var b=document.createElement("iframe");b.style.display="none";b.style.width="0px";b.style.height="0px";b.style.border="none";b.style.zIndex="-1000";b.style.left="-1000px";b.style.top="-1000px";b.name="googlefcPresent";document.body.appendChild(b)}else l.setTimeout(a,5)};a()},na=function(a){var b=Date.now();W(a.b,"internal_api_load_with_sb",a.f.h(),function(){var c;var d=a.b,e=l[l.btoa(d+"loader_js")];if(e){e=l.atob(e);
+e=parseInt(e,10);d=l.btoa(d+"loader_js").split(".");var f=l;d[0]in f||"undefined"==typeof f.execScript||f.execScript("var "+d[0]);for(;d.length&&(c=d.shift());)d.length?f[c]&&f[c]!==Object.prototype[c]?f=f[c]:f=f[c]={}:f[c]=null;c=Math.abs(b-e);c=1728E5>c?0:c}else c=-1;0!=c&&(W(a.b,"internal_api_sb"),Z(a,Q(a.a,6)))},function(c){Z(a,c?Q(a.a,4):Q(a.a,5))})},Z=function(a,b){a.c||(a.c=!0,a=new l.XMLHttpRequest,a.open("GET",b,!0),a.send())};(function(a,b){l[a]=function(c){for(var d=[],e=0;e<arguments.length;++e)d[e-0]=arguments[e];l[a]=q;b.apply(null,d)}})("__d3lUW8vwsKlB__",function(a){"function"==typeof window.atob&&(a=window.atob(a),a=new X(a?JSON.parse(a):null),(new Y(a)).start())});}).call(this);
+
+window.__d3lUW8vwsKlB__("WyIxY2I1M2YzMWEzNjM5OTExIixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2YvQUdTS1d4VVhiemVpcGZnbTJjZHhEZkh6dFVSc29SWUxkSlJVZV9ETlJRdFlEYXpBdGlFWU1xSGFDSExLX2NHYmRWUWxONEw5TUcyaUxMc09fY0ZXT0ZGamJDa1x1MDAzZCJdCixbMjAsImRpdi1ncHQtYWQiLDEwMCwiTVdOaU5UTm1NekZoTXpZek9Ua3hNUVx1MDAzZFx1MDAzZCIsW251bGwsbnVsbCxudWxsLCJodHRwczovL3d3dy5nc3RhdGljLmNvbS8wZW1uL2YvcC8xY2I1M2YzMWEzNjM5OTExLmpzP3VzcXBcdTAwM2RDQkEiXQpdCiwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vbC9BR1NLV3hYRkh3LUlJOGcyTmloTGoyMmlWeDhRWExnWEZha1Y5WDVyRW5MdlludVZ0S3hMLWdDUXFOSjVqQzJjSlhzOVIyMUVEMW5CTFBGVE5WalJfYTlGP2FiXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2wvQUdTS1d4VVEyOXZ3cFNmWDdabFdZOHFVWnJKai03R201elMtZmNCdTZYenRKVS1URmxmUW55YzFReHBGRWJKTWxQN2pLdE95b1hUMVFzVENXclMyTlQ3eT9hYlx1MDAzZDJcdTAwMjZzYmZcdTAwM2QxIiwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vbC9BR1NLV3hWTUNlbVNlSXIyVUE5NFNSZWNTc25jcTdLbU0xUTNEMVNYN1hjWDgtWWEwYUVYNktqMHFjdW85NUZlTU1JZEpydTV4aUNtYzdBUzQ1M3BpSHYzP3NiZlx1MDAzZDIiXQo=");</script>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/headfiles/fundingchoices.csp, e:.000114 -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link type="image/x-icon" href="https://www.diez.hn/csp/mediapool/sites/Diez/assets/img/2016/desktop/favicon.ico" rel="shortcut icon">
+
+<link rel='next' href='?page=2'>
+ <link type="text/css" href="https://www.diez.hn/csp/mediapool/sites/Diez/assets/css/2016/desktop/botonessocialesdesktop.css" rel="stylesheet"> 
+<link type="text/css" href="https://www.diez.hn/csp/mediapool/sites/Diez/assets/css/2016/desktop/buscador_desktop.css" rel="stylesheet">
+
+	
+	
+	
+		
+		<link type="text/css" href="https://www.diez.hn/csp/mediapool/sites/Diez/assets/css/2016/desktop/dz_nota.css?v=2020.02.31" rel="stylesheet">	
+			
+		
+		
+
+		
+			<script async src="https://cdn.ampproject.org/v0.js"></script>
+			<script async custom-element="amp-facebook" src="https://cdn.ampproject.org/v0/amp-facebook-0.1.js"></script>
+			<script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
+			<script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
+			<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+			<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+			<script async custom-element="amp-jwplayer" src="https://cdn.ampproject.org/v0/amp-jwplayer-0.1.js"></script>
+			<!-- hola mundo -->
+			
+			<link rel="amphtml" href="https://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo?amp=1"/>
+		
+	
+
+
+
+	
+		
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/headfiles/metaTagHistoria.csp -->
+
+
+
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/VariablesDeNota.csp -->
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+
+
+
+
+				
+ 
+
+
+
+				
+ 
+
+
+
+
+	
+
+
+
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/VariablesDeNota.csp, e:.015981 -->
+
+
+
+
+<!-- Metas Generales -->
+<title>Estos son los 7 deportes más extremos en el mundo    - Diez - Diario Deportivo</title>
+
+<meta name="title" content="Estos son los 7 deportes más extremos en el mundo    - Diez - Diario Deportivo"/>
+<meta name="description" content="La adrenalina es lo que m&aacute;s se genera al realizar los deprotes extremos, cuando son practicados usualmente son adictivos aunque no todos pueden estar capacitados para ciertos deportes.&#65279;"/>
+<meta name="keywords" content="Parkour,Buceo cavernas,Paracaidismo,Mundo,Deportes mas extremos,"/>
+
+<!-- Metas Opengraph -->
+<meta property="fb:pages" content="21418727168"/> <!-- Instant Articles -->
+<meta property="og:title" content="Estos son los 7 deportes más extremos en el mundo    - Diez - Diario Deportivo"/>
+<meta property="og:description" content="La adrenalina es lo que m&aacute;s se genera al realizar los deprotes extremos, cuando son practicados usualmente son adictivos aunque no todos pueden estar capacitados para ciertos deportes.&#65279;"/>
+<meta property="og:image" content="https://www.diez.hn/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=822cthwUK4eGpKz8or168c$daE2N3K4ZzOUsqbU5sYva2_W8lUmINGOqt3q7CoKr6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&CONTENTTYPE=image/jpeg"/>
+<meta property="og:type" content="article"/>                
+<meta property="og:url" content="https://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo"/>
+<meta property="og:site_name" content="Diez - Diario Deportivo"/>
+<meta property="og:locale" content="es_LA">
+<meta property="article:publisher" content="https://www.facebook.com/diariodiez"/>
+<meta property="article:section" content="No todo es Futbol"/>
+
+<link rel="canonical" href="https://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo" /><meta property='article:tag' content='Parkour'><meta property='article:tag' content='Buceo cavernas'><meta property='article:tag' content='Paracaidismo'><meta property='article:tag' content='Mundo'><meta property='article:tag' content='Deportes mas extremos'><meta property='article:tag' content=''>
+ 
+<!-- Metas Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@diariodiez"/>
+<meta name="twitter:title" content="Estos son los 7 deportes más extremos en el mundo   "/>
+<meta name="twitter:description" content="La adrenalina es lo que m&aacute;s se genera al realizar los deprotes extremos, cuando son practicados usualmente son adictivos aunque no todos pueden estar capacitados para ciertos deportes.&#65279;"/>
+<meta name="twitter:image" content="https://www.diez.hn/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=822cthwUK4eGpKz8or168c$daE2N3K4ZzOUsqbU5sYva2_W8lUmINGOqt3q7CoKr6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&CONTENTTYPE=image/jpeg"/>
+<meta name="twitter:url" content="https://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo"/>
+<meta property="fb:app_id" content="1066155386850485"/>
+
+
+
+
+
+
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/headfiles/chartbeat2020.csp -->
+
+<script type="text/javascript">
+(function() {
+  /** CONFIGURATION START **/
+  var _sf_async_config = window._sf_async_config = (window._sf_async_config || {});
+  _sf_async_config.uid = 21622;
+  _sf_async_config.domain = 'diez.hn';
+  _sf_async_config.flickerControl = false;
+  _sf_async_config.useCanonical = true;
+  _sf_async_config.useCanonicalDomain = true;
+  _sf_async_config.sections = "No todo es Futbol,Clasificacion:0,TipoPeriodismo:Estandar,Tipo:Nota";
+  _sf_async_config.authors = "AMAYORGA";
+  _sf_async_config.title = "Estos son los 7 deportes más extremos en el mundo   ";
+  _sf_async_config.type = "Nota";
+  /** CONFIGURATION END **/
+  function loadChartbeat() {
+	  var e = document.createElement('script');
+	  var n = document.getElementsByTagName('script')[0];
+	  e.type = 'text/javascript';
+	  e.async = true;
+	  e.src = '//static.chartbeat.com/js/chartbeat.js';;
+	  n.parentNode.insertBefore(e, n);
+  }
+  loadChartbeat();
+})();
+</script>
+<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/headfiles/chartbeat2020.csp, e:.000139 -->
+
+
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/headfiles/metaTagHistoria.csp, e:.016709 -->
+
+		
+	<script src="https://content.jwplatform.com/libraries/Q0Abwx21.js"> </script>
+
+
+
+
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/headfiles/head.csp, e:.017513 -->
+
+		
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/sectionfiles/scriptsFooter.csp -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" id="cookieinfo" src="//cookieinfoscript.com/js/cookieinfo.min.js" data-bg="#ecebeb" data-fg="#222" data-link="#C7290E" data-divlinkbg="#47a447" data-cookie="CookieInfoScript" data-text-align="left" data-divlink="#FFF" data-moreinfo="http://www.go.com.hn/politica-de-cookies/" data-close-text="Aceptar" data-linkmsg="pol&iacute;tica de uso de cookies" data-message="</iframe>Si continuas utilizando este sitio, aceptas nuestra" data-accept-on-scroll="true"></script>
+
+<script src="https://www.diez.hn/csp/mediapool/sites/Diez/assets/js/2016/desktop/dz.js" defer></script>
+
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js'></script>
+<script>$(document).ready(function(){Handlebars.registerHelper("plusOneSeccion",function(t){return t+1})});
+function PosicionesGoleadoresProximaJornada(a,n,o){$.getJSON(a,function(a){n instanceof Array||(n=[n]),o instanceof Array||(o=[o]);for(var r in n){var i=o[r],e=n[r],t=$(i).html(),c=Handlebars.compile(t),s=c(a);$(e).html(s)}})};
+Handlebars.registerHelper("formatofechaDF",function(r){return r=r.toString(),r.substring(0,4)+"-"+r.substring(4,6)+"-"+r.substring(6,8)});
+Handlebars.registerHelper('ifEquals', function(a, b, options) { if (a === b) {	return options.fn(this);} return options.inverse(this);});</script>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/sectionfiles/scriptsFooter.csp, cache(20), e:.001106 -->
+		
+		  
+			
+		
+		
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		window.dataLayer.push({
+		'event' : 'pageview',
+		'gtm_type' : 'articulo',
+		'gtm_seccion' : '/NotodoesFutbol/',
+		'gtm_device' : 'desktop',
+		'gtm_version' : 0
+		});
+		</script>
+		
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/headfiles/googleAnalyticsGTM.csp -->
+<script>
+	//var dim3 = "Estandar";
+	//var gtmLoc = window.location.href;	
+	//if(gtmLoc.indexOf("-339/") > -1) { dim3 = "Fotogaleria"; }
+	window.dataLayer.push({
+	'event' : 'pageview',
+	'dimension1' : 'AMAYORGA',
+	'dimension2' : '2020-02-28',
+	'dimension3' : 'Estandar',
+	'dimension4' : 'No todo es Futbol',
+	'dimension5' : '0',
+	'dimension6' : 'Estandar'
+	});
+	</script>	
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/headfiles/googleAnalyticsGTM.csp, e:.000335 -->
+
+		
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/scripts/gtmHead.csp -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T99RL3K');</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WPSCQPC');</script>
+<!-- End Google Tag Manager -->
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/scripts/gtmHead.csp, cache(20), e:.000163 -->
+	
+		
+		
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/dfpAds.csp -->
+
+
+
+<script async='async' src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
+
+<script>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+
+// TERCEPT
+//googletag.cmd.push(function() {
+	//window && window.tercept && window.tercept.init && window.tercept.init(3383164);
+//});
+</script>
+
+<script>
+googletag.cmd.push(function() {
+var DZ_D_Section_160x600_A = googletag.defineSlot('/3383164/DZ_D_Section_160x600_A', [160, 600],'div-gpt-ad-1524155259451-0').addService(googletag.pubads());
+var DZ_D_Section_160x600_B = googletag.defineSlot('/3383164/DZ_D_Section_160x600_B', [160, 600],'div-gpt-ad-1524155259451-1').addService(googletag.pubads());
+var DZ_D_Section_300x250_a = googletag.defineSlot('/3383164/DZ_D_Section_300x250_a', [300, 250],'div-gpt-ad-1524155259451-2').addService(googletag.pubads());
+var DZ_D_Section_300x250_b = googletag.defineSlot('/3383164/DZ_D_Section_300x250_b', [300, 250],'div-gpt-ad-1524155259451-3').addService(googletag.pubads());
+var DZ_D_Section_300x250_c = googletag.defineSlot('/3383164/DZ_D_Section_300x250_c', [300, 250],'div-gpt-ad-1524155259451-4').addService(googletag.pubads());
+var DZ_D_Section_300x250_d = googletag.defineSlot('/3383164/DZ_D_Section_300x250_d', [300, 250],'div-gpt-ad-1524155259451-5').addService(googletag.pubads());
+var DZ_D_Section_300x250_e = googletag.defineSlot('/3383164/DZ_D_Section_300x250_e', [300, 250],'div-gpt-ad-1524155259451-6').addService(googletag.pubads());
+var DZ_D_Section_728x90_a = googletag.defineSlot('/3383164/DZ_D_Section_728x90_a', [728, 90],'div-gpt-ad-1524155259451-8').addService(googletag.pubads());
+var DZ_D_Section_728x90_b = googletag.defineSlot('/3383164/DZ_D_Section_728x90_b', [728, 90],'div-gpt-ad-1524155259451-9').addService(googletag.pubads());
+var DZ_D_Section_728x90_c = googletag.defineSlot('/3383164/DZ_D_Section_728x90_c', [728, 90],'div-gpt-ad-1524155259451-10').addService(googletag.pubads());
+googletag.defineSlot('/3383164/dz_d_ros_1x1', [1, 1],'div-gpt-ad-1524155259451-11').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.pubads().collapseEmptyDivs();
+googletag.pubads().setTargeting('Section_DZ','NotodoesFutbol');
+googletag.pubads().setTargeting('Clasificacion','0');
+googletag.pubads().disableInitialLoad();
+!function(o){try{var t,g,e=JSON.parse(window.localStorage.getItem('nvgpersona23910'));for(g in e)t=(t='nvg_'+g).substring(0,10),'object'==typeof googletag&&googletag.pubads().setTargeting(t,e[g]),'function'==typeof GA_googleAddAttr&&GA_googleAddAttr(t,e[g])}catch(o){}}(window);
+window.googletag.pubads().setTargeting("ttLS", getTailTargetParam('LS'));
+window.googletag.pubads().setTargeting("ttS", getTailTargetParam('S'));
+window.googletag.pubads().setTargeting("ttT", getTailTargetParam('T'));
+window.googletag.pubads().setTargeting("ttC", getTailTargetParam('C'));
+window.googletag.pubads().setTargeting("ttU", getTailTargetParam('U'));
+window.googletag.pubads().setTargeting("ttCA", getTailTargetParam('CA'));
+window.googletag.pubads().setTargeting("ttE", getTailTargetParam('E'));
+window.googletag.pubads().setTargeting("ttA", getTailTargetParam('A'));
+window.googletag.pubads().setTargeting("ttG", getTailTargetParam('G'));
+googletag.enableServices();
+ });
+</script>
+
+
+
+<script>
+//load the apstag.js library
+!function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+
+//initialize the apstag.js library on the page to allow bidding
+apstag.init({
+     pubID:  '03c4db9e-bacf-4a4a-a134-7a5f911c7cee',
+     adServer: 'googletag'
+});
+</script><script>
+apstag.fetchBids({ slots: [
+ {slotID: 'div-gpt-ad-1524155259451-0', slotName: '3383164/DZ_D_Section_160x600_A', sizes: [[160,600]]},
+ {slotID: 'div-gpt-ad-1524155259451-1', slotName: '3383164/DZ_D_Section_160x600_B', sizes: [[160,600]]},
+ {slotID: 'div-gpt-ad-1524155259451-2', slotName: '3383164/DZ_D_Section_300x250_a', sizes: [[300,250]]},
+ {slotID: 'div-gpt-ad-1524155259451-3', slotName: '3383164/DZ_D_Section_300x250_b', sizes: [[300,250]]},
+ {slotID: 'div-gpt-ad-1524155259451-4', slotName: '3383164/DZ_D_Section_300x250_c', sizes: [[300,250]]},
+ {slotID: 'div-gpt-ad-1524155259451-5', slotName: '3383164/DZ_D_Section_300x250_d', sizes: [[300,250]]},
+ {slotID: 'div-gpt-ad-1524155259451-6', slotName: '3383164/DZ_D_Section_300x250_e', sizes: [[300,250]]},
+ {slotID: 'div-gpt-ad-1524155259451-8', slotName: '3383164/DZ_D_Section_728x90_a', sizes: [[728,90]]},
+ {slotID: 'div-gpt-ad-1524155259451-9', slotName: '3383164/DZ_D_Section_728x90_b', sizes: [[728,90]]},
+ {slotID: 'div-gpt-ad-1524155259451-10', slotName: '3383164/DZ_D_Section_728x90_c', sizes: [[728,90]]},
+ {slotID: 'div-gpt-ad-1524155259451-11', slotName: '3383164/dz_d_ros_1x1', sizes: [[1,1]]}
+],
+timeout: 2e3
+}, function(bids) { googletag.cmd.push(function(){ apstag.setDisplayBids(); googletag.pubads().refresh(); }); }); 
+</script>
+
+
+<style>aside.ad728x90>div,.adleft>div,.adright>div,.ad300x250>div{visibility:inherit!important}</style>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/dfpAds.csp, e:.000194 -->
+
+		
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/tailTarget.csp -->
+<!-- TailTarget Tag Manager TT-13297-7/CT-1143 --> <script>     (function(i) {     var ts = document.createElement('script');     ts.type = 'text/javascript';     ts.async = true;     ts.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'tags.t.tailtarget.com/t3m.js?i=' + i;     var s = document.getElementsByTagName('script')[0];     s.parentNode.insertBefore(ts, s);     })('TT-13297-7/CT-1143'); </script> <!-- End TailTarget Tag Manager -->
+
+<script type="text/javascript">
+var getTailTargetParam = function(a) {
+	var ttCookieName = "_ttdmp";
+	if (!window._ttprofilescache) {
+		window._ttprofilescache = {};
+		try {
+			var c = document.cookie.match('(^|;)\\s*' + ttCookieName + '\\s*=\\s*([^;]+)');
+			var d = c ? c.pop().split('|') : [];
+			for (var i = 0; i < d.length; i++) {
+                var kv = d[i].split(":");
+                if (kv[1] && kv[1].indexOf(",") > 0) {
+                  window._ttprofilescache[kv[0]] = kv[1].split(",");
+                } else {
+                  window._ttprofilescache[kv[0]] = kv[1];
+                }
+			}
+        } catch (e) {
+        }
+    }
+  return window._ttprofilescache[a] ? window._ttprofilescache[a] : 'na';
+};
+</script>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/tailTarget.csp, cache(30), e:.000176 -->
+
+		
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/admiral.csp -->
+<script type="text/javascript">!(function(o,n,t){t=o.createElement(n),o=o.getElementsByTagName(n)[0],t.async=1,t.src="https://hocgeese.com/v2/0/sslIF97ksGIHZyqDC8l0Ig3A9xeNlxmte5EIyRSe9zElgarQcAATHk",o.parentNode.insertBefore(t,o)})(document,"script"),(function(o,n){o[n]=o[n]||function(){(o[n].q=o[n].q||[]).push(arguments)}})(window,"admiral");!(function(n,e,r,t){function o(){if((function o(t){try{return(t=localStorage.getItem("v4ac1eiZr0"))&&0<t.split(",")[4]}catch(n){}return!1})()){var t=n[e].pubads();typeof t.setTargeting===r&&t.setTargeting("admiral-engaged","true")}}(t=n[e]=n[e]||{}).cmd=t.cmd||[],typeof t.pubads===r?o():typeof t.cmd.unshift===r?t.cmd.unshift(o):t.cmd.push(o)})(window,"googletag","function");</script>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/admiral.csp, e:.000067 -->
+
+	</head>
+	<body>
+		<script type='text/javascript'>
+		// TERCEPT
+		googletag.cmd.push(function() {
+			googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+				window && window.tercept && window.tercept.logRenderEvent && window.tercept.logRenderEvent(event);
+			});
+		});
+		googletag.cmd.push(function() {
+			googletag.pubads().addEventListener('impressionViewable', function(event) {
+				window && window.tercept && window.tercept.logImpEvent && window.tercept.logImpEvent(event);
+			});
+		});
+		</script>
+		
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/headfiles/Parsely.csp -->
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/headfiles/Parsely.csp, cache(120), e:.000136 -->
+
+		
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/scripts/gtmBody.csp -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T99RL3K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPSCQPC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/scripts/gtmBody.csp, cache(20), e:.000134 -->
+			
+		
+<!-- fi:/csp/mediapool/sites/Diez/templates/sections/v3/DZSectionWeb.csp?sid=326&cid=1360126&fid=498&fullstory=1 -->
+
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspV3/helper/detectMobileDevice.csp -->
+
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspV3/helper/detectMobileDevice.csp, e:.000071 -->
+
+ 
+
+
+
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspV3/adFiles/dfp/banner1x1Intertisial.csp -->
+
+<!-- streamInclude:/csp/mediapool/sites/Diez/assets/cspV3/adFiles/dfp/banner1x1Intertisial.csp -->
+
+<!--/streamInclude:/csp/mediapool/sites/Diez/assets/cspV3/adFiles/dfp/banner1x1Intertisial.csp -->
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspV3/adFiles/dfp/banner1x1Intertisial.csp[5001,0], e:.001583 -->
+
+
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspV3/adFiles/dfp/banner1x1Personalizado.csp -->
+
+<!-- streamInclude:/csp/mediapool/sites/Diez/assets/cspV3/adFiles/dfp/banner1x1Personalizado.csp -->
+
+<!--/streamInclude:/csp/mediapool/sites/Diez/assets/cspV3/adFiles/dfp/banner1x1Personalizado.csp -->
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspV3/adFiles/dfp/banner1x1Personalizado.csp[5001,0], e:.001449 -->
+
+
+
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/sectionfiles/menuMarcas.csp -->
+<div id="top_links">
+    <h5>GRUPO OPSA:</h5>
+    <a href="http://www.laprensa.hn/" target="_blank" rel="noopener noreferrer">LAPRENSA.HN</a>
+    <span>+</span>
+    <a href="https://www.elheraldo.hn/" target="_blank" rel="noopener noreferrer">ELHERALDO.HN</a>
+    <span>+</span>
+    <a href="https://www.revistaestilo.net/" target="_blank" rel="noopener noreferrer">REVISTAESTILO.NET</a>
+    <span>+</span>
+    <a href="http://www.hondurastips.hn/" target="_blank" rel="noopener noreferrer">HONDURASTIPS.HN</a>
+    <span>+</span>
+    <a href="http://www.estrategiaynegocios.net/" target="_blank" rel="noopener noreferrer">ESTRATEGIAYNEGOCIOS.NET</a>
+    <span>+</span>
+    <a href="http://www.superclasificados.hn/" target="_blank" rel="noopener noreferrer">SUPERCLASIFICADOS.HN</a>
+    <span>+</span>
+    <a href="http://www.gotv.hn/?utm_source=Diez&utm_medium=Link&utm_campaign=GoTVReferido" target="_blank" rel="noopener noreferrer">GOTV.HN</a>	
+	<span>+</span>
+    <a href="http://empleo.go.com.hn/" target="_blank" rel="noopener noreferrer">EMPLEOS GO</a>
+</div>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/sectionfiles/menuMarcas.csp, cache(120), e:.000237 -->
+
+    
+<!--publicidad en el header-->
+<div id="top_ads">
+	<div class="box">
+		<!--Megabanner_Superior-->
+    	
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/megabannerSuperior.csp -->
+<aside class="ad728x90" style="float:initial;margin:0 auto;">
+	<div id='div-gpt-ad-1524155259451-8' style="visibility:inherit!important">
+	<script>
+	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1524155259451-8'); });
+	</script>
+	</div>
+</aside>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/megabannerSuperior.csp, cache(20), e:.000182 -->
+
+		
+    </div>
+</div>
+<!--termina publicidad en el header-->
+
+<div id="header">
+
+
+
+	
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/sectionfiles/menuChelato.csp -->
+<div class="fi-section-header fi-section-header__extended"><div class="fi-section-header__wrap"><nav><ul id="menu"><li class="parent"><a class="icon" href="#" style="text-align:center"><img src="https://opsa-cdn.scdn7.secure.raxcdn.com/diez/2016/desktop/img/menu.png" alt="Menu" style="text-align:center"></a><ul class="sub-menu"><li><a href="http://www.diez.hn/liganacionaldehonduras/" >LIGA NACIONAL</a></li><span class="separador"></span><li><a href="http://www.diez.hn/laseleccion/" >LA SELECCI&Oacute;N</a></li><span class="separador"></span><li><a href="http://www.diez.hn/deportes/futbol/futbolennumeros/" >ESTAD&Iacute;STICAS</a></li><span class="separador"></span><li><a href="http://www.diez.hn/centroamerica/" >Centroam&eacute;rica</a></li><span class="separador"></span>
+<li><a href="http://www.diez.hn/legionarios/" >LEGIONARIOS</a></li><span class="separador"></span>
+<li><a href="http://www.diez.hn/notodoesfutbol/mauriciodubon/" >MAURICIO DUB&Oacute;N</a></li><span class="separador"></span>
+<li><a href="http://www.diez.hn/championsleague/" >Champions League</a></li><span class="separador"></span>
+<li><a href="http://www.diez.hn/ligadeascenso/" >Segunda Divisi&oacute;n</a></li><span class="separador"></span><li><a href="http://www.diez.hn/futbolmexicano/" >F&Uacute;TBOL MEXICANO</a></li><span class="separador"></span><li><a href="http://www.diez.hn/mls/" >MLS</a></li><span class="separador"></span><li><a href="http://www.diez.hn/partidos-de-hoy-horarios">Agenda Deportiva</a></li><span class="separador"></span><li><a href="http://www.diez.hn/faranduladeportiva/" >Far&aacute;ndula</a></li><span class="separador"></span><li><a href="http://www.diez.hn/notodoesfutbol/" >No todo es f&uacute;tbol</a></li><span class="separador"></span><li><a href="http://www.diez.hn/blogs/" >Blogs</a></li><span class="separador"></span><li><a href="http://www.diez.hn/videos/" >Videos</a></li><span class="separador"></span><li><a href="http://www.diez.hn/noticiasdelmundo/" >Noticias del mundo</a></li><span class="separador"></span><li><a href="https://www.diez.hn/portadadigital">Portada Digital</a></li><span class="separador"></span><li><a href="https://diez.hn/deportecolegial">Deporte Colegial</a></li><span class="separador"></span><li><a href="http://www.diez.hn/servicioalusuario/" >Servicio al Usuario</a></li></ul></li></ul></nav>
+
+<a href="https://www.diez.hn/" class="logoHome" title="Diario Deportivo Diez"></a>
+<a href="http://www.diez.hn/chelatoucles/" class="fi-section-header__competition" title="Chelato Ucl&eacute;s" ><h1 class="fi-section-header__competition__title">Cheleto Ucl&eacute;s</h1></a>
+
+
+ 
+
+<ul class="fi-section-header__nav">
+	
+	<li><a href="http://www.diez.hn/internacionales/" ><span data-hover="POSICIONES">INTERNACIONALES</span></a></li>
+	<li><a href="http://www.diez.hn/fotogalerias/" ><span data-hover="CALENDARIO">FOTOGALER&Iacute;AS</span></a></li>
+	<li><a href="http://www.diez.hn/videos/" ><span data-hover="GOLEADORES">VIDEOS</span></a></li>
+</ul>
+
+			
+</div>
+</div>
+<style>
+#fondo{width:300px!important;height:112px!important;z-index:9!important;top:0!important;position:relative!important;float:left!important;margin-bottom:8px!important;left:0!important}
+#numeros{font:700 23px/32px 'Fira Sans'!important;width:289px;height:48px;border-style:none;margin:0 auto;position:absolute;top:40px;left:110px}.contMenuOro{position:absolute!important;float:right!important;right:0!important;display:inline-block!important;top:0!important;width:300px!important;height:112px!important;overflow:hidden!important}
+nav{width: 40px!important;
+    height: 40px!important;
+    position: absolute!important;
+    left: 6px!important;
+    top: 8px!important;
+    background: 0 0;
+    z-index: 999!important;}
+    nav ul{width:auto!important}nav ul li a.icon{width:24px!important;background:#c7290e!important;border-radius:50%!important}#menu .icon img{left:0!important;top:-1px!important}nav ul.sub-menu>li>a{width:150px!important}.fi-section-header__competition{z-index:0!important}
+
+.fi-section-header{
+text-align: center!important;
+    height: 112px!important;
+    padding: 0!important;
+    margin: 0!important;
+    position: relative;
+    min-height: 60px;
+    background-color: #03103c;
+}
+.fi-section-header:before{
+background: url(https://www.diez.hn/csp/mediapool/sites/Diez/assets/img/2016/desktop/bannerChelato.jpg);
+    background-repeat: no-repeat!important;
+    content: ""!important;
+    display: block!important;
+    position: absolute!important;
+    top: 0!important;
+    right: 0!important;
+    bottom: auto!important;
+    left: 0!important;
+    background-color: #020f3c;
+    height: 100%!important;
+    background-position: center;
+    opacity: 1;
+}
+.fi-section-header__emblem{text-decoration: none!important;
+    display: inline-block!important;
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+    position: relative!important;
+    top: 51px!important;
+    -webkit-transform: translateY(-50%)!important;
+    -moz-transform: translateY(-50%)!important;
+    -ms-transform: translateY(-50%)!important;
+    -o-transform: translateY(-50%)!important;
+    width: 63px!important;
+    float: left!important;
+    height: 95px!important;
+    left: 32px;
+	}
+.fi-section-header__emblem img{height:80%!important;position:relative}.fi-section-header__competition{min-height:40px;display:-webkit-box;margin-top:6px;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;align-items:center;margin-right:40px;margin-left:70px;margin-top:2px;margin-left:130px;margin-right:245px;max-height:67px;align-items:flex-start;flex-direction:column;justify-content:center;color:#474747;height:67px;align-items:flex-start;flex-direction:column;justify-content:center;position:relative;float:left;display:inline-block;width:500px;float:left;margin:0;text-align:left}.fi-section-header .fi-section-header__wrap .fi-section-header__social{display:none}
+
+.fi-section-header__nav li{    height: 100%;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;}.fi-section-header__nav li+li{margin-left:12px}.fi-section-header__nav li{height:100%}
+	.fi-section-header__nav{white-space:nowrap;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;align-items:center;position:relative;z-index:1}.fi-section-header__nav li{height:100%}.fi-section-header__nav li.active a{border-bottom:3px solid #fff}.fi-section-header__nav a{color:#fff}.fi-section-header__nav a{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;align-items:center;height:100%;color:#326295;text-transform:uppercase;font-size:11px;-webkit-transition-property:opacity;-moz-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity;-webkit-transition-duration:.2s;-moz-transition-duration:.2s;-o-transition-duration:.2s;transition-duration:.2s;-webkit-transition-timing-function:ease-out;-moz-transition-timing-function:ease-out;-o-transition-timing-function:ease-out;transition-timing-function:ease-out;backface-visibility:hidden}.fi-section-header__nav a{color:#fff}.fi-section-header__nav li{height:100%}.fi-section-header__competition{    max-height: 59px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    float: left;
+    display: inline-block;
+    width: 698px;
+    margin-bottom: 10px;
+    text-align: center;
+}#spacer2 .title{font-size:12px!important;text-align:right!important}div#spacer2:first-child{width:22px!important}#spacer2{padding:2px;text-align:center;width:auto!important;margin:0}.fi-section-header__competition__date{font-size:14px;font-family:'Fira Sans'!important;font-weight:900;color:#fff;text-transform:uppercase;position:relative;z-index:999;top:4px;width:190px;display:inline-block;float:left;margin-top:10px;height:40px;margin:10px 0 0 0;line-height:2.6}.fi-section-header__nav a{font-size:13px;font-style:normal;font-weight:700}.fi-section-header__nav a{font-size:13px;font-style:normal;font-weight:700}
+.fi-section-header__nav{height: 32px;
+    align-items: center;
+    margin: 0 auto;
+    list-style: none;
+    font-family: 'Fira Sans'!important;
+    top: 10px;
+    width: 403px;
+    text-align: center;}@media (min-width:1024px){.fi-section-header .fi-section-header__wrap .fi-section-header__social{display:block;position:absolute;top:0;right:0;height:84px;z-index:1}}@media (min-width:1200px){.h1,h1{font-size:54px;line-height:1.3;margin-bottom:30px}}.fi-section-header__competition__title{font-style:normal;margin-bottom:25px;font-family:'Fira Sans'!important;color:#ffb71800;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;-o-font-smoothing:antialiased;text-transform:uppercase;font-weight:900;line-height:1.4;font-size:28px;position:relative;margin-top:10px;width:100%;display:inline-block;float:left;height:100%;margin:10px 0 0 10px;}.fi-section-header__wrap{content:"";position:relative;top:0!important;background-repeat:no-repeat;background-size:contain;background-position:center;padding-right:9px;z-index:9;width:942px!important;height:112px!important;display:inline-block!important;text-align:left!important}
+a.logoHome{
+    background-image: url(https://opsa-cdn.scdn7.secure.raxcdn.com/diez/2016/desktop/img/logo.png);
+    background-repeat: no-repeat;
+    background-size: 68%;
+    height: 25px;
+    width: 100px;
+    position: absolute;
+    float: left;
+    background-position: center;
+    left: 610px;
+    z-index: 9;
+    border-left: 1px solid #fff;
+    padding-left: 15px;
+    top: 12px;
+	}
+#header{position:static;z-index:2147483647!important}.notemovas{position:fixed!important}#keycontent .center{z-index:0!important}</style>
+
+	
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/sectionfiles/menuChelato.csp, e:.007301 -->
+
+
+</div>
+
+
+
+
+
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspV3/adFiles/dfp/banner1x1.csp -->
+<div id='div-gpt-ad-1524155259451-11'>
+<script>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1524155259451-11'); });
+</script>
+</div>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspV3/adFiles/dfp/banner1x1.csp, e:.00012 -->
+
+
+<!-- fi:/csp/mediapool/sites/Diez/templates/stories/full/v3/DzNoticiaFullWeb.csp -->
+
+
+
+	<style>.pie-imagen-amp{color:#3f3d3d;font:18px/1.4em Georgia!important;width:100%;float:none;height:auto;position:relative;}.i-amphtml-layout-size-defined{overflow:inherit!important;width:100%}.i-amphtml-layout-size-defined img{margin:0 auto!important}.i-amphtml-fit-text-content, .i-amphtml-fit-text-content.i-amphtml-fill-content{position:absolute;left:0px;bottom:0;right:0}</style>
+    
+    
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/VariablesDeNota.csp -->
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+
+
+
+
+				
+ 
+
+
+
+				
+ 
+
+
+
+
+	
+
+
+
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/VariablesDeNota.csp, e:.008843 -->
+
+    <section id="keycontent">
+        <div class="container">        
+            
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/lateralIzquierdo.csp -->
+<aside class="adleft"><!--publicidad lateral izquierda-->
+	<div id='div-gpt-ad-1524155259451-0' style="visibility:inherit!important">
+	<script>
+	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1524155259451-0'); });
+	</script>
+	</div>
+</aside>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/lateralIzquierdo.csp, e:.000124 -->
+
+            <div class="center">
+                
+					
+                    
+<!-- fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/Widgets/WidgetAgendaDF.csp -->
+
+<section style="margin-top:5px">
+<iframe src="https://marcadores.diez.hn/v3/htmlCenter/data/deportes/futbol/todos/pages/es/agenda_ticker.html?b=65864" width="980" height="100" scrolling="auto" frameborder="0" style="width: 1px; min-width: 100%; *width: 100%; height:125px" class=""></iframe>
+</section>
+<!--/fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/Widgets/WidgetAgendaDF.csp, refresh(2), e:.001322 -->
+
+				
+                
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/sectionfiles/BreadcrumbDesktop.csp -->
+
+<aside id="breadcrumb">
+	<a href="http://www.diez.hn">Inicio</a><span>&gt;</span>
+	<a href="http://www.diez.hn/notodoesfutbol/" class="active" >No todo es F&uacute;tbol</a>
+</aside>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/sectionfiles/BreadcrumbDesktop.csp, e:.00037 -->
+
+                <article id="nota">    
+                    <h1>Estos son los 7 deportes más extremos en el mundo   </h1>
+                    <h2>La adrenalina es lo que m&aacute;s se genera al realizar los deprotes extremos, cuando son practicados usualmente son adictivos aunque no todos pueden estar capacitados para ciertos deportes.&#65279;</h2>   
+					
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/bannerEntradilla.csp -->
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/bannerEntradilla.csp, e:.000135 -->
+
+					
+						
+					
+					
+					
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/jornadaDeportivaResultados.csp -->
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/jornadaDeportivaResultados.csp, e:.00051 -->
+
+						
+					
+					<aside class="share2" style="z-index: 9;position: relative;">
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/sectionfiles/iconosociales.csp -->
+
+<a class="resp-sharing-button__link" href="whatsapp://send?text=Estos son los 7 deportes más extremos en el mundo   %20https://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo" target="_blank" rel="noopener" aria-label="">
+  <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.1 3.9C17.9 1.7 15 .5 12 .5 5.8.5.7 5.6.7 11.9c0 2 .5 3.9 1.5 5.6L.6 23.4l6-1.6c1.6.9 3.5 1.3 5.4 1.3 6.3 0 11.4-5.1 11.4-11.4-.1-2.8-1.2-5.7-3.3-7.8zM12 21.4c-1.7 0-3.3-.5-4.8-1.3l-.4-.2-3.5 1 1-3.4L4 17c-1-1.5-1.4-3.2-1.4-5.1 0-5.2 4.2-9.4 9.4-9.4 2.5 0 4.9 1 6.7 2.8 1.8 1.8 2.8 4.2 2.8 6.7-.1 5.2-4.3 9.4-9.5 9.4zm5.1-7.1c-.3-.1-1.7-.9-1.9-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6s.3-.3.4-.5c.2-.1.3-.3.4-.5.1-.2 0-.4 0-.5C10 9 9.3 7.6 9 7c-.1-.4-.4-.3-.5-.3h-.6s-.4.1-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.3-.3-.4-.6-.5z"/></svg>
+    </div>
+  </div>
+</a>
+<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo" target="_blank" rel="noopener" aria-label="">
+  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg>
+    </div>
+  </div>
+</a>
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=Estos son los 7 deportes más extremos en el mundo   &amp;url=https://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo" target="_blank" rel="noopener" aria-label="">
+  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/></svg>
+    </div>
+  </div>
+</a>
+<a class="resp-sharing-button__link" href="mailto:?subject=Estos son los 7 deportes más extremos en el mundo   &amp;body=https://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo" target="_self" rel="noopener" aria-label="">
+  <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z"/></svg>
+    </div>
+  </div>
+</a>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/sectionfiles/iconosociales.csp, e:.000117 -->
+</aside>
+					<aside class="share3">
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/sectionfiles/iconosociales.csp -->
+
+<a class="resp-sharing-button__link" href="whatsapp://send?text=Estos son los 7 deportes más extremos en el mundo   %20https://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo" target="_blank" rel="noopener" aria-label="">
+  <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.1 3.9C17.9 1.7 15 .5 12 .5 5.8.5.7 5.6.7 11.9c0 2 .5 3.9 1.5 5.6L.6 23.4l6-1.6c1.6.9 3.5 1.3 5.4 1.3 6.3 0 11.4-5.1 11.4-11.4-.1-2.8-1.2-5.7-3.3-7.8zM12 21.4c-1.7 0-3.3-.5-4.8-1.3l-.4-.2-3.5 1 1-3.4L4 17c-1-1.5-1.4-3.2-1.4-5.1 0-5.2 4.2-9.4 9.4-9.4 2.5 0 4.9 1 6.7 2.8 1.8 1.8 2.8 4.2 2.8 6.7-.1 5.2-4.3 9.4-9.5 9.4zm5.1-7.1c-.3-.1-1.7-.9-1.9-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6s.3-.3.4-.5c.2-.1.3-.3.4-.5.1-.2 0-.4 0-.5C10 9 9.3 7.6 9 7c-.1-.4-.4-.3-.5-.3h-.6s-.4.1-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.3-.3-.4-.6-.5z"/></svg>
+    </div>
+  </div>
+</a>
+<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo" target="_blank" rel="noopener" aria-label="">
+  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg>
+    </div>
+  </div>
+</a>
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=Estos son los 7 deportes más extremos en el mundo   &amp;url=https://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo" target="_blank" rel="noopener" aria-label="">
+  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/></svg>
+    </div>
+  </div>
+</a>
+<a class="resp-sharing-button__link" href="mailto:?subject=Estos son los 7 deportes más extremos en el mundo   &amp;body=https://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo" target="_self" rel="noopener" aria-label="">
+  <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z"/></svg>
+    </div>
+  </div>
+</a>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/sectionfiles/iconosociales.csp, e:.000072 -->
+</aside>
+                    
+                    
+                    <figure>  
+					
+                                        
+                                <img width="100%" alt="Para practicar deportes extremos se necesita tener mucha adrenalina y atreverse, pues no todos son para profesionales." src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=822cthwUK4eGpKz8or168c$daE2N3K4ZzOUsqbU5sYva2_W8lUmINGOqt3q7CoKr6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">
+	                            <span class="filtro"></span>
+								
+     	                       <figcaption>Para practicar deportes extremos se necesita tener mucha adrenalina y atreverse, pues no todos son para profesionales. */ *</figcaption>
+							<!--Si tiene galeria relacionada-->
+							
+								
+							         
+                                    
+                    </figure>
+                    		
+                         
+                    <section class="left">
+						<div class="creditoNota">
+							<span class="iconMundial"></span>
+							<span class="autor"> Larissa Sierra</span>
+							<time>28 Feb 2020 / 01:16 PM</time>
+						</div>
+                        
+                        
+
+                        <div id="textFull">
+						<style>figcaption.pie-imagen-amp {font: 14px/16px flama;color: #666;margin-bottom: 10px;}</style>
+						
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv2/helper/getTextFull.csp -->
+
+
+
+  
+	<div id="DTElementID-21438217" class="WebText"><p>Los <strong>deportes</strong> <strong>extremos</strong> para quienes los practican significan adrenalina y pasión, y para otros es probar algo nuevo y emocionante.</p>
+<h2><strong>Los 7 deportes mas extremos del mundo</strong></h2>
+<h3>Paracaidismo</h3>
+<p>Esta técnica de lanzamiento es desde cierta altura en cualquier aeronave como avión o helicóptero utilizando un paracaídas que amortigua el aterrizaje.</p>
+<p>El <strong>paracaidismo</strong> es considerado como uno de los <strong>deportes</strong> <strong>más</strong> <strong>extremos</strong> del <strong>mundo</strong> aunque su realización no es muy económica y tampoco es adapta para cualquiera.</p>
+<p><amp-img src=/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=6wESsxCeGmUjhwaXJ0uF1M$daE2N3K4ZzOUsqbU5sYvLOMDpospB4XzOlh$quTV86FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg" alt="paracaidismo-extremo" width="380" height="250" layout="responsive"></amp-img><br /><amp-fit-text layout="responsive" width="380" height="50" max-font-size=" 12 ">El paracaídas que se utiliza, en algunos casos es abierto rápidamente luego de salir de la aeronave y en otros casos se realiza en caída libre controlada.</amp-fit-text></p>
+<h3>Bungee Jumping</h3>
+<p>El puenting o bungee jumping es una de las<a href="https://www.msn.com/es-pe/deportes/todos-los-deportes/las-im%C3%A1genes-m%C3%A1s-impactantes-de-deportes-extremos/ss-BBY35m1?li=BBoJIjd" target="_blank"> actividades extremas</a> del <strong>mundo</strong>, la cual una persona es lanzada desde una altura de cientos de metros, con una cuerda elástica atada en su tobillo o cuerpo y el otro extremo es atado al punto de partida del salto.</p>
+<p>Cuando la persona logra saltar la cuerda se extiende para contrarrestar la inercia que se provoca con la caída, haciendo que el sujeto suba y baje hasta que la energía del salto desaparezca.</p>
+<p><amp-img src=/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=Fmz523pJIe7JsWGSsQCY3M$daE2N3K4ZzOUsqbU5sYsuDs8wius9MNoIJjcFhtW96FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg" alt="bungee-deporte-extremo" width="380" height="250" layout="responsive"></amp-img><br /><amp-fit-text layout="responsive" width="380" height="50" max-font-size=" 12 ">Es considerado uno de los deportes más riesgosos por su altura y manera de caída.</amp-fit-text></p>
+<h3> Escalada Free-Solo</h3>
+<p>Este <strong>deporte extremo</strong> consiste en ascender paredes de roca sin utilizar cuerdas, seguro, arnés o cualquier otro tipo de seguridad, dejando al escalador únicamente con sus propias habilidades.</p>
+<p>La escalada o free-solo únicamente lo practican los expertos por ser tan extremo y peligroso. Aunque la posibilidad de muerte es 1 persona por casa 27.000 ascensos.</p>
+<p><amp-img src=/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=2oABmZkIPDfPySXHqP_sR8$daE2N3K4ZzOUsqbU5sYtP0cdvvp7jdWkJgpHv853Z6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg" alt="escalada-deporte" width="380" height="250" layout="responsive"></amp-img><br /><amp-fit-text layout="responsive" width="380" height="50" max-font-size=" 12 ">Normalmente este tipo de escalada el deportista lo suele realizar en un terreno ya conocido.</amp-fit-text></p>
+<h3>Parkour</h3>
+<p>El <strong>Parkour</strong> consiste en desplazarse usando la arquitectura del medio en el que se mueven entre acrobacias y grandes saltos.</p>
+<p>Su peligrosidad es alta si el deportista no tiene un dominio de las nociones y un nivel físico elevado, ya que se han presentado casos de muerte en el mundo por su realización inadecuada.</p>
+<p><amp-img src=/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=oqI1BX$xhggV0Sn7RA0k9c$daE2N3K4ZzOUsqbU5sYv8DqRQGsxftnwI9SQej7NU6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg" alt="parkour-extremo" width="380" height="250" layout="responsive"></amp-img><br /><amp-fit-text layout="responsive" width="380" height="50" max-font-size=" 12 ">El objetivo de este deporte es trasladarse de un punto hacia otro de manera rápida.</amp-fit-text></p>
+<h3>Buceo en cavernas</h3>
+<p>Esta categoría del<a href="https://www.diez.hn/notodoesfutbol/1060984-500/utila-el-lugar-perfecto-para-practicar-el-buceo" target="_blank"><strong> buceo</strong></a>, los submarinistas exploran <strong>cavernas</strong> subacuáticas con una gran magnitud de profundidad.</p>
+<p>Es considerado uno de los <strong>deportes más extremos</strong> del <strong>mundo</strong> por su peligrosidad por factores como la oscuridad, la presión debajo del agua, ataques de hipotermia o falta de oxígeno en la bombona.</p>
+<p><amp-img src=/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=D0PMLrP5nZjCD83tQhxPVc$daE2N3K4ZzOUsqbU5sYu$rBwRjfdE6lR7ovBY5GTq6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg" alt="buceo-utila" width="380" height="250" layout="responsive"></amp-img><br /><amp-fit-text layout="responsive" width="380" height="50" max-font-size=" 12 ">Este deporte obliga al buzo a recorrer largas distancia para encontrar la superficie.</amp-fit-text></p>
+<h3>Tow Surf</h3>
+<p>Surfear olas de más de 8 metros de altura, en condiciones climatológicas extremas como tormentas o ventiscas, hacen al <a href="https://www.diez.hn/otrassecciones/videojuegosytecnologia/834180-99/el-surf-buscar%C3%A1-estar-en-los-juegos-ol%C3%ADmpicos-de-tokio-2020" target="_blank">surf</a> como uno de los <strong>deportes</strong> más <strong>extremos</strong>. El mayor peligro es el ser sepultado por toneladas de agua, siendo arrastrado el surfista hasta a 10 metros de profundidad.</p>
+<p><amp-img src=/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=pMJhpa4iEdBXC$rIfWAiY8$daE2N3K4ZzOUsqbU5sYtVX5nOFHdk4x3UdsWjy3Ob6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg" alt="surf-deporte" width="380" height="250" layout="responsive"></amp-img><br /><amp-fit-text layout="responsive" width="380" height="50" max-font-size=" 12 ">La dificultad del surf radica en la velocidad como en la proporción de la ola.</amp-fit-text></p>
+<h3>Rafting Extremo</h3>
+<p>Esta actividad deportiva consiste en recorrer el cauce de los ríos en la dirección de la corriente es decir, río abajo por lo general en una balsa de goma.</p>
+<p><strong>LEA: </strong><a href="https://www.diez.hn/notodoesfutbol/1060586-498/la-cuenca-del-r%C3%ADo-cangrejal-tierra-de-los-deportes-extremos" target="_blank">La Cuenca del Río Cangrejal, tierra de deportes extremos</a></p>
+<p>Los deportistas tienen que desafiar las corrientes de los ríos únicamente con su balsa y sus remos evitando ser abatido por la corriente.</p>
+<p><amp-img src=/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=2uazUkdJ89lr8MuLFh8DVs$daE2N3K4ZzOUsqbU5sYtliCCkmT3ZTxfHSBBzaH0E6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg" alt="deortes-extremos" width="380" height="250" layout="responsive"></amp-img><br /><amp-fit-text layout="responsive" width="380" height="50" max-font-size=" 12 "><br />En este deporte se debe realizar mucho esfuerzo y habilidad para no desestabilizar.</amp-fit-text></p>
+<p> </p>
+
+
+</div>
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv2/helper/getTextFull.csp, e:.003253 -->
+
+						
+
+						
+						
+					
+												
+						
+						
+						
+						</div>
+                       
+                        
+                        <!--ENCUESTA-->
+                        
+                        
+                        
+                        <style type="text/css">#fwn_videos { float: left;width: 518px;} #fwn_videos img{ width:auto !important} </style>
+                         <div id="fwn_videos"></div> 
+                        
+                       <!-- FOLLOW DE TWITTER -->
+                        <aside class="share"  style="height:20px!important;margin:10px 0;width:100%;">
+                            <a href="https://twitter.com/diariodiezhn" class="twitter-follow-button" data-show-count="false">
+                                S&iacute;guenos @diariodiezhn
+                            </a> 
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                            </script>
+                        </aside>
+						
+						<aside class="share2">
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/sectionfiles/iconosociales.csp -->
+
+<a class="resp-sharing-button__link" href="whatsapp://send?text=Estos son los 7 deportes más extremos en el mundo   %20https://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo" target="_blank" rel="noopener" aria-label="">
+  <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.1 3.9C17.9 1.7 15 .5 12 .5 5.8.5.7 5.6.7 11.9c0 2 .5 3.9 1.5 5.6L.6 23.4l6-1.6c1.6.9 3.5 1.3 5.4 1.3 6.3 0 11.4-5.1 11.4-11.4-.1-2.8-1.2-5.7-3.3-7.8zM12 21.4c-1.7 0-3.3-.5-4.8-1.3l-.4-.2-3.5 1 1-3.4L4 17c-1-1.5-1.4-3.2-1.4-5.1 0-5.2 4.2-9.4 9.4-9.4 2.5 0 4.9 1 6.7 2.8 1.8 1.8 2.8 4.2 2.8 6.7-.1 5.2-4.3 9.4-9.5 9.4zm5.1-7.1c-.3-.1-1.7-.9-1.9-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6s.3-.3.4-.5c.2-.1.3-.3.4-.5.1-.2 0-.4 0-.5C10 9 9.3 7.6 9 7c-.1-.4-.4-.3-.5-.3h-.6s-.4.1-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.3-.3-.4-.6-.5z"/></svg>
+    </div>
+  </div>
+</a>
+<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo" target="_blank" rel="noopener" aria-label="">
+  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/></svg>
+    </div>
+  </div>
+</a>
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=Estos son los 7 deportes más extremos en el mundo   &amp;url=https://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo" target="_blank" rel="noopener" aria-label="">
+  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/></svg>
+    </div>
+  </div>
+</a>
+<a class="resp-sharing-button__link" href="mailto:?subject=Estos son los 7 deportes más extremos en el mundo   &amp;body=https://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo" target="_self" rel="noopener" aria-label="">
+  <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z"/></svg>
+    </div>
+  </div>
+</a>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/sectionfiles/iconosociales.csp, e:.000084 -->
+</aside>                        <aside id="tags">                              
+                           
+                           
+                             
+                            <span class="tagsprincipal">  
+                              <a href="/buscador?q=Parkour" rel="nofollow" target="_blank">
+                                 <span>#</span>Parkour
+                              </a>
+                            </span>  
+                            
+                           
+                            
+                              <a href="/buscador?q=Buceo cavernas" rel="nofollow" target="_blank">
+                                 <span>#</span>Buceo cavernas
+                              </a>
+                            
+                           
+                            
+                              <a href="/buscador?q=Paracaidismo" rel="nofollow" target="_blank">
+                                 <span>#</span>Paracaidismo
+                              </a>
+                            
+                           
+                            
+                              <a href="/buscador?q=Mundo" rel="nofollow" target="_blank">
+                                 <span>#</span>Mundo
+                              </a>
+                            
+                           
+                            
+                              <a href="/buscador?q=Deportes mas extremos" rel="nofollow" target="_blank">
+                                 <span>#</span>Deportes mas extremos
+                              </a>
+                            
+                               
+                        </aside> 
+                       
+                    </section>
+                    <section class="right">
+                        
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/bannerA.csp -->
+<aside id="ad300x250" class="ad-inline">
+	<div id='div-gpt-ad-1524155259451-2' style="visibility:inherit!important">
+	<script>
+	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1524155259451-2'); });
+	</script>
+	</div>
+</aside><!--big_banner_a-->
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/bannerA.csp, cache(20), e:.000211 -->
+
+                                
+                        
+					
+<!-- fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/Widgets/WidgetEstadisticasDesktop.csp -->
+
+	
+
+	
+
+	
+
+
+
+	
+	
+
+
+
+		<article class="x2">
+			<aside id="wtabla">
+			
+				<div id="posicionesSeccion" class="posicionesLigas">
+					<div class="titleW"><div class="box"><a href="http://www.diez.hn/deportes/futbol/futbolennumeros/" ><h3><span class="trofeo"></span>Estad&iacute;sticas</h3></a></div>
+				</div>
+				<div class="tables">
+					<header>
+						<a href="http://www.diez.hn/deportes/futbol/futbolennumeros/ligamexico/" >Posiciones</a>
+						<a href="http://www.diez.hn/deportes/futbol/futbolennumeros/ligamexico/calendario/" >Calendario</a>
+						<a href="http://www.diez.hn/deportes/futbol/futbolennumeros/ligamexico/goleadores/" >Goleadores</a>
+						<span class="arrow"><img src="https://www.diez.hn/csp/mediapool/sites/Diez/assets/img/arrow.png" alt="arrow"></span>
+						<span class="ligaName">Liga Mexicana</span>
+					</header>
+					<div class="body" style="height:366px !important">
+						
+                        
+						<ul class="titles">
+							<li class="flag bgnone"></li>
+							<li class="team">&nbsp;</li>
+							<li>pj</li><li>pg</li><li>pe</li><li>pp</li><li>gf</li><li>gc</li><li class="rojo">pt</li>
+						</ul>
+						<ul class="rows tabladeposicionesSeccion">
+						
+								<script id="calendariolinaSeccion" type="text/x-handlebars-template">
+								{{#result}}
+									{{#each equipo}}
+										<li>
+											<span class="posicion">{{plusOneSeccion @index}}</span>
+											<span class="flag"><img src="https://www.diez.hn/csp/mediapool/sites/Diez/assets/img/2016/estadisticas/escudos_ch/{{id}}.gif"></span>
+											<span class="team">{{nombre}}</span>
+											<span>{{jugados}}</span>
+											<span>{{ganados}}</span>
+											<span>{{empatados}}</span>
+											<span>{{perdidos}}</span>
+											<span>{{golesfavor}}</span>
+											<span>{{golescontra}}</span>
+											<span class="rojo">{{puntos}}</span>
+										</li>
+									{{/each}}
+								{{/result}}
+								</script>
+							
+							</ul>
+						</div>
+					</div>
+				</div>
+				<a href="http://www.diez.hn/deportes/futbol/futbolennumeros/ligamexico/calendario/" class="footer" >VER RESULTADOS</a>
+			</aside>
+		</article>
+		
+	
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+	  PosicionesGoleadoresProximaJornada('/csp/mediapool/sites/Diez/assets/jsonAPI/RetrieveDataFactory.csp?jname=posiciones_2074.json','.tabladeposicionesSeccion','#calendariolinaSeccion');
+	})
+	</script>
+
+<!--/fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/Widgets/WidgetEstadisticasDesktop.csp, e:.002022 -->
+
+					
+<!-- fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/ModPortadaDZ/movModCoronavirus.csp -->
+<aside id="gridFarandula">
+	<span class="ribbon"></span>
+	<a href="http://www.diez.hn/coronavirus/" ><div class="nameSection">CORONA<b>VIRUS</b></div></a>
+	<article>
+	
+		
+		
+		
+			
+			
+				
+					
+					
+				
+					<div class="NotasBigFit">
+						<a href="http://www.diez.hn/noticiasdelmundo/1459621-498/bill-gates-predice-cuando-el-mundo-volvera-normalidad-coronavirus-vacunas-covid" >
+							<figure class="imageFitBig"><span class="filtroFar"></span><img alt="Coronavirus: Bill Gates vuelve a predecir cuándo el mundo volverá por completo a la normalidad" src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=JmY0qUSkGNlIJhkjirpXI8$daE2N3K4ZzOUsqbU5sYsO_7fJEAKhoKLeOEuqoRQC6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg"></figure>          
+							
+							<h3>Coronavirus: Bill Gates vuelve a predecir cuándo el mundo volverá por completo a la normalidad</h3>
+						</a>  
+					</div>				
+				
+			
+		
+	
+		
+		
+		
+			
+			
+				
+					
+					
+				
+					<div class="NotasSmallFarandula">
+						<a href="http://www.diez.hn/coronavirus/1456396-441/japon-cepa-coronavirus-covid-19-pandemia-eek-juegos-olimpicos-hospitales-enfermedad-vacunas" >
+							<figure class="imageFsmall"><img alt="Alerta en Japón por 'EeK', la nueva cepa de coronavirus que podría resistirse a las vacunas" src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=2mSkAzLg3sd0t_GKQPsmuc$daE2N3K4ZzOUsqbU5sYu8ikkNA_ne2gSxRU5n4a6Z6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg"></figure>          
+							
+							<h3>Alerta en Japón por 'EeK', la nueva cepa de coronavirus que podría resistirse a las vacunas</h3>
+						</a>
+					</div>  					
+				
+			
+		
+		
+		
+			
+			
+				
+					
+					
+				
+					<div class="NotasSmallFarandula">
+						<a href="http://www.diez.hn/coronavirus/1454405-441/presidente-el-salvador-nayib-bukele-anuncia-donativo-vacunas-covid19-china" >
+							<figure class="imageFsmall"><img alt="Presidente de El Salvador Nayib Bukele anuncia otro donativo de vacunas contra Covid-19 desde China" src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=tDTuOLSLwacdx7FFCuF$eM$daE2N3K4ZzOUsqbU5sYvLXzAOSmD5P2_Yci$oZtvg6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg"></figure>          
+							
+							<h3>Presidente de El Salvador Nayib Bukele anuncia otro donativo de vacunas contra Covid-19 desde China</h3>
+						</a>
+					</div>  					
+				
+			
+		
+	
+ </article>
+</aside>
+
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/KillVariablesHistoria.csp -->
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/KillVariablesHistoria.csp, e:.000099 -->
+
+<!--/fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/ModPortadaDZ/movModCoronavirus.csp, e:.007428 -->
+
+						
+						
+                        
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/bannerB.csp -->
+<aside id="ad300x250" class="ad-inline">
+	<div id='div-gpt-ad-1524155259451-3' style="visibility:inherit!important">
+	<script>
+	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1524155259451-3'); });
+	</script>
+	</div>
+</aside>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/bannerB.csp, cache(20), e:.000199 -->
+
+						<div style="margin-bottom:20px;float:left">
+<!-- fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/Widgets/WidgetTrendingDesktop.csp -->
+<article class="x2v">
+	<aside id="trending">
+		<span class="icon"></span><h3><b>trend</b>ing</h3>
+			
+					<div class="cont1">
+						<a href="https://www.diez.hn/fotogalerias/1460652-499/fichajes-honduras-motagua-tiene-tres-altas-y-va-por-una-joyita-olimpia"><div class="numero  ">1</div></a>
+						<div class="contenido"><a href="https://www.diez.hn/fotogalerias/1460652-499/fichajes-honduras-motagua-tiene-tres-altas-y-va-por-una-joyita-olimpia"><h4>Fichajes Honduras: Motagua tiene tres altas y va por una 'joyita'; Olimpia perdería una pieza y hond</h4></a></div>                 		
+					</div>
+			
+					<div class="cont1">
+						<a href="https://www.diez.hn/liganacionaldehonduras/1460633-498/denovan-torres-termine-contrato-marathon-liga-nacional-honduras-hector-vargas"><div class="numero  ">2</div></a>
+						<div class="contenido"><a href="https://www.diez.hn/liganacionaldehonduras/1460633-498/denovan-torres-termine-contrato-marathon-liga-nacional-honduras-hector-vargas"><h4>Denovan Torres: 'Terminé contrato con Marathón; antes de iniciar el torneo tuve ofertas de Tegucigal</h4></a></div>                 		
+					</div>
+			
+					<div class="cont1">
+						<a href="https://www.diez.hn/internacionales/1460626-498/fue-su-compa%C3%B1ero-de-selecci%C3%B3n-en-alemania-y-ahora-lo-repudia-por"><div class="numero dos">3</div></a>
+						<div class="contenido"><a href="https://www.diez.hn/internacionales/1460626-498/fue-su-compa%C3%B1ero-de-selecci%C3%B3n-en-alemania-y-ahora-lo-repudia-por"><h4>Fue su compañero de selección en Alemania y ahora lo repudia por compartir pornografía infantil: ''¡</h4></a></div>                 		
+					</div>
+			
+					<div class="cont1">
+						<a href="https://www.diez.hn/chelatoucles/1460611-441/ramon-ramirez-debut-liga-mexico-santos-chelato-ucles-muerte-tecnico"><div class="numero dos">4</div></a>
+						<div class="contenido"><a href="https://www.diez.hn/chelatoucles/1460611-441/ramon-ramirez-debut-liga-mexico-santos-chelato-ucles-muerte-tecnico"><h4>Exfigura de la Selección de México recuerda a Chelato Uclés, con quien debutó en Liga MX</h4></a></div>                 		
+					</div>
+			
+					<div class="cont1">
+						<a href="https://www.diez.hn/chelatoucles/1460638-441/chelato-ucles-sepelio-entierro-jose-dela-paz-herrera-tegucigalpa"><div class="numero tres">5</div></a>
+						<div class="contenido"><a href="https://www.diez.hn/chelatoucles/1460638-441/chelato-ucles-sepelio-entierro-jose-dela-paz-herrera-tegucigalpa"><h4>¡Feliz viaje, maestro! Chelato Uclés, la leyenda hondureña, fue sepultado en Tegucigalpa</h4></a></div>                 		
+					</div>
+			
+					<div class="cont1">
+						<a href="https://www.diez.hn/fotogalerias/1460643-499/chelato-ucles-entierro-sepultado-fotos-tegucigalpa-honduras-cementerio-iglesia-misa-mundial"><div class="numero tres">6</div></a>
+						<div class="contenido"><a href="https://www.diez.hn/fotogalerias/1460643-499/chelato-ucles-entierro-sepultado-fotos-tegucigalpa-honduras-cementerio-iglesia-misa-mundial"><h4>El maestro ya brilla en el cielo: así fue el último adiós de Chelato Uclés en medio de lágrimas</h4></a></div>                 		
+					</div>
+			
+					<div class="cont1">
+						<a href="https://www.diez.hn/internacionales/1460610-498/derrota-barcelona-granada-zidane-real-madrid-osasuna-la-liga-espanola-ramos"><div class="numero cuatro">7</div></a>
+						<div class="contenido"><a href="https://www.diez.hn/internacionales/1460610-498/derrota-barcelona-granada-zidane-real-madrid-osasuna-la-liga-espanola-ramos"><h4>¿Feliz por la derrota del Barcelona? La tajante respuesta de Zidane respecto a 'la flor' del Real Ma</h4></a></div>                 		
+					</div>
+			
+					<div class="cont1">
+						<a href="https://www.diez.hn/internacionales/1460666-498/ramos-argentina-messi-campeon-mundo-argentina-real-madrid-oscar-ruggeri-defensor"><div class="numero cuatro">8</div></a>
+						<div class="contenido"><a href="https://www.diez.hn/internacionales/1460666-498/ramos-argentina-messi-campeon-mundo-argentina-real-madrid-oscar-ruggeri-defensor"><h4>''Si Ramos jugara con Argentina, Messi sería campeón del mundo; es el mejor defensor de todos''</h4></a></div>                 		
+					</div>
+			
+					<div class="cont1">
+						<a href="https://www.diez.hn/fotogalerias/1460458-499/chelato-ucles-fotos-casa-intimidad-tegucigalpa-murio-jose-dela-paz-herrera"><div class="numero cinco">9</div></a>
+						<div class="contenido"><a href="https://www.diez.hn/fotogalerias/1460458-499/chelato-ucles-fotos-casa-intimidad-tegucigalpa-murio-jose-dela-paz-herrera"><h4>Con un tesoro adentro: Así fue la humilde casa donde Chelato Uclés vivió casi toda su vida</h4></a></div>                 		
+					</div>
+		
+				
+	</aside>
+</article>
+<!--/fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/Widgets/WidgetTrendingDesktop.csp, cache(15), e:.000234 -->
+</div>
+                        
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/bannerC.csp -->
+<aside id="ad300x250" class="ad-inline">
+	<div id='div-gpt-ad-1524155259451-4' style="visibility:inherit!important">
+	<script>
+	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1524155259451-4'); });
+	</script>
+	</div>
+</aside>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/bannerC.csp, cache(20), e:.000163 -->
+
+                    </section>
+					
+					<div style="width:600px;height:auto;float:left;position:relative;margin:5px 0 10px;border-bottom:3px solid #514e4e;border-top:1px solid #514e4e;overflow:hidden">
+						
+<!-- fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/Widgets/WidgetNewsletter.csp -->
+<style>#_form_29_{font-size:14px;line-height:1.6;font-family:arial,helvetica,sans-serif}#_form_29_ *{outline:0}._form_hide{display:none;visibility:hidden}._form_show{display:block;visibility:visible}#_form_29_._form-top{top:0}#_form_29_._form-bottom{bottom:0}#_form_29_._form-left{left:0}#_form_29_._form-right{right:0}#_form_29_ input[type=text],#_form_29_ input[type=date],#_form_29_ textarea{padding:6px;height:auto;border:1px solid #979797;border-radius:4px;color:#000!important;font-size:13px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}#_form_29_ textarea{resize:none}#_form_29_ ._submit{-webkit-appearance:none;cursor:pointer;font-family:arial,sans-serif;font-size:14px;text-align:center;background:#C7290E!important;border:0!important;-moz-border-radius:4px!important;-webkit-border-radius:4px!important;border-radius:4px!important;color:#fff!important;padding:10px!important;width:100%}#_form_29_ ._close-icon{cursor:pointer;background-image:url(https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png);background-repeat:no-repeat;background-size:14.2px 14.2px;position:absolute;display:block;top:11px;right:9px;overflow:hidden;width:16.2px;height:16.2px}#_form_29_ ._close-icon:before,#_form_29_ ._field-wrapper{position:relative}#_form_29_ ._form-body{margin-bottom:30px}#_form_29_ ._form-image-left{width:150px;float:left}#_form_29_ ._form-content-right{margin-left:164px}#_form_29_ ._form-branding{color:#fff;font-size:10px;clear:both;text-align:left;margin-top:30px;font-weight:100}#_form_29_ ._form-branding ._logo{display:block;width:130px;height:14px;margin-top:6px;background-image:url(https://d226aj4ao1t61q.cloudfront.net/hh9ujqgv5_aclogo_li.png);background-size:130px auto;background-repeat:no-repeat}#_form_29_ ._form-label,#_form_29_ ._form_element ._form-label{font-weight:700;margin-bottom:5px;display:block}#_form_29_._dark ._form-branding{color:#333}#_form_29_._dark ._form-branding ._logo{background-image:url(https://d226aj4ao1t61q.cloudfront.net/jftq2c8s_aclogo_dk.png)}#_form_29_ ._form_element{position:relative;margin-bottom:10px;font-size:0;max-width:100%}#_form_29_ ._form_element *{font-size:14px}#_form_29_ ._form_element._clear{clear:both;width:100%;float:none}#_form_29_ ._clear-element,#_form_29_ ._form_element._clear:after{clear:left}#_form_29_ ._form_element input[type=text],#_form_29_ ._form_element input[type=date],#_form_29_ ._form_element select,#_form_29_ ._form_element textarea:not(.g-recaptcha-response){display:block;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}#_form_29_ ._inline-style{float:left}#_form_29_ ._inline-style input[type=text]{width:150px}#_form_29_ ._inline-style:not(._clear)+._inline-style:not(._clear){margin-left:20px}#_form_29_ ._form_element img._form-image{max-width:100%}#_form_29_ ._full_width{width:100%}#_form_29_ ._form_full_field{display:block;width:100%;margin-bottom:10px}#_form_29_ input[type=text]._has_error,#_form_29_ textarea._has_error{border:1px solid #f37c7b}#_form_29_ input[type=checkbox]._has_error{outline:#f37c7b solid 1px}#_form_29_ ._error{display:block;position:absolute;font-size:13px;z-index:10000001}#_form_29_ ._error._above{padding-bottom:4px;top:-41px;right:0}#_form_29_ ._error._below{padding-top:4px;top:100%;right:0}#_form_29_ ._error._above ._error-arrow,#_form_29_ ._error._below ._error-arrow{right:15px;border-left:5px solid transparent;border-right:5px solid transparent}#_form_29_ ._error._above ._error-arrow{bottom:0;border-top:5px solid #f37c7b}#_form_29_ ._error._below ._error-arrow{top:0;border-bottom:5px solid #f37c7b}#_form_29_ ._error-inner{padding:8px 12px;background-color:#f37c7b;font-size:13px;font-family:arial,sans-serif;color:#fff;text-align:center;text-decoration:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}#_form_29_ ._error-inner._form_error{margin-bottom:5px;text-align:left}#_form_29_ ._error-html,#_form_29_ ._error-inner._no_arrow{margin-bottom:10px}#_form_29_ ._button-wrapper ._error-inner._form_error{position:static}#_form_29_ ._error-arrow{position:absolute;width:0;height:0}.pika-single{z-index:10000001!important}@media all and (min-width:320px) and (max-width:667px){#_form_29_,#_form_29_ ._form-content{margin:0;width:100%}::-webkit-scrollbar{display:none}#_form_29_{min-width:100%;max-width:100%;box-sizing:border-box}#_form_29_ *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-size:1em}#_form_29_ ._form-inner{display:block;min-width:100%}#_form_29_ ._form-title,#_form_29_ ._inline-style{margin-top:0;margin-right:0;margin-left:0}#_form_29_ ._form-title{font-size:1.2em}#_form_29_ ._form_element{margin:0 0 20px;padding:0;width:100%}#_form_29_ ._form-element,#_form_29_ ._inline-style,#_form_29_ input[type=text],#_form_29_ label,#_form_29_ p,#_form_29_ textarea:not(.g-recaptcha-response){float:none;display:block;width:100%}#_form_29_ ._row,#_form_29_ label,#_form_29_ p{margin-bottom:.7em;width:100%}#_form_29_ ._row input[type=checkbox],#_form_29_ ._row input[type=radio],#_form_29_ ._row span label{margin:0!important;vertical-align:middle!important}#_form_29_ ._row input[type=checkbox]+span label{display:inline}#_form_29_ ._row span label{width:initial!important}#_form_29_ ._form-image{max-width:100%;height:auto!important}#_form_29_ input[type=text]{padding-left:10px;padding-right:10px;font-size:16px;line-height:1.3em;-webkit-appearance:none}#_form_29_ input[type=checkbox],#_form_29_ input[type=radio]{display:inline-block;width:1.3em;height:1.3em;font-size:1em;margin:0 .3em 0 0;vertical-align:baseline}#_form_29_ button[type=submit]{padding:20px;font-size:1.5em}#_form_29_ ._inline-style{margin:20px 0 0!important}}#_form_29_{position:relative;text-align:left;margin:25px auto 0;padding: 0px 10px 10px 10px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background:#fff!important;border:0 solid #b0b0b0!important;width:100%;-moz-border-radius:0!important;-webkit-border-radius:0!important;border-radius:0!important;color:#000!important}#_form_29_ ._form-title{font-size:22px;line-height:22px;font-weight:600;margin-bottom:0}#_form_29_:after,#_form_29_:before{content:" ";display:table}#_form_29_:after{clear:both}#_form_29_._inline-style{width:auto;display:inline-block}#_form_29_._inline-style input[type=text],#_form_29_._inline-style input[type=date]{padding:10px 12px}#_form_29_._inline-style button._inline-style{position:relative;top:27px}#_form_29_._inline-style p{margin:0}#_form_29_._inline-style ._button-wrapper{position:relative;margin:27px 12.5px 0 20px}#_form_29_ ._form-thank-you{position:relative;left:0;right:0;text-align:center;font-size:18px}@media all and (min-width:320px) and (max-width:667px){#_form_29_._inline-form._inline-style ._inline-style._button-wrapper{margin-top:20px!important;margin-left:0!important}}.g-recaptcha{margin-left:-11px}</style>
+<article class="x2">
+	<aside id="wnewsletter" style="margin:0 !important">
+		<div class="posicionesLigas">
+			<div class="titleW" style="position: relative;float: left;width: 100%;height: 60px;background: #c00;text-align: center;padding-top: 10px;">
+				<div class="box"><a href="http://diez.hn/newsletter/suscribete/"><h3 style="width: auto !important;color: #fff;"><span class="newsletter"></span>Newsletter</h3></a></div>
+			</div>
+			<div class="tables">
+				
+				
+				<form method="POST" action="https://grupoopsa.activehosted.com/proc.php" id="_form_29_" class="_form _form_29 _inline-form  _dark" novalidate>
+
+
+				  
+				  <div class="_form-content">
+					<div class="_form_element _x94994788 _full_width _clear">
+					  <div class="_html-code">
+						<p style="margin: 0;text-align: center;">
+						  No te pierdas las mejores noticias deportivas del d&iacute;a
+						</p>
+					  </div>
+					</div>
+					<div class="_form_element _x33677724 _full_width " style="width: 100%;">
+					  <label class="_form-label" style="display:none;">
+						Correo electr&oacute;nico *
+					  </label>
+					  <div class="_field-wrapper">
+						<input type="text" name="email" placeholder="Escriba su correo electr&oacute;nico" required/>
+					  </div>
+					</div>
+					<div class="_form_element _x46115805 _full_width " style="width: 295px;display: inline-block;vertical-align: -webkit-baseline-middle;">
+					  <label class="_form-label" style="display:none;">
+						Por favor verifique su respuesta *
+					  </label>
+					  <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
+					  </div>
+					</div>
+					<div class="_button-wrapper _full_width" style="width: 215px;display:inherit;clear:both">
+					  <button id="_form_29_submit" class="_submit" type="submit" target="_blank">
+						Registrarse
+					  </button>
+					</div>
+					<div class="_clear-element">
+					</div>
+				  </div>
+				  <div class="_form-thank-you" style="display:none;">
+				  </div>
+				</form>
+			</div>
+		</div>
+	</aside>                        
+</article>
+<script type="text/javascript">
+window.cfields = [];
+window._show_thank_you = function(id, message, trackcmp_url) {
+  var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
+  form.querySelector('._form-content').style.display = 'none';
+  thank_you.innerHTML = message;
+  thank_you.style.display = 'block';
+  if (typeof(trackcmp_url) != 'undefined' && trackcmp_url) {
+    // Site tracking URL to use after inline form submission.
+    _load_script(trackcmp_url);
+  }
+  if (typeof window._form_callback !== 'undefined') window._form_callback(id);
+};
+window._show_error = function(id, message, html) {
+  var form = document.getElementById('_form_' + id + '_'), err = document.createElement('div'), button = form.querySelector('button'), old_error = form.querySelector('._form_error');
+  if (old_error) old_error.parentNode.removeChild(old_error);
+  err.innerHTML = message;
+  err.className = '_error-inner _form_error _no_arrow';
+  var wrapper = document.createElement('div');
+  wrapper.className = '_form-inner';
+  wrapper.appendChild(err);
+  button.parentNode.insertBefore(wrapper, button);
+  document.querySelector('[id^="_form"][id$="_submit"]').disabled = false;
+  if (html) {
+    var div = document.createElement('div');
+    div.className = '_error-html';
+    div.innerHTML = html;
+    err.appendChild(div);
+  }
+};
+window._load_script = function(url, callback) {
+    var head = document.querySelector('head'), script = document.createElement('script'), r = false;
+    script.type = 'text/javascript';
+    script.charset = 'utf-8';
+    script.src = url;
+    if (callback) {
+      script.onload = script.onreadystatechange = function() {
+      if (!r && (!this.readyState || this.readyState == 'complete')) {
+        r = true;
+        callback();
+        }
+      };
+    }
+    head.appendChild(script);
+};
+(function() {
+  if (window.location.search.search("excludeform") !== -1) return false;
+  var getCookie = function(name) {
+    var match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]+)'));
+    return match ? match[2] : null;
+  }
+  var setCookie = function(name, value) {
+    var now = new Date();
+    var time = now.getTime();
+    var expireTime = time + 1000 * 60 * 60 * 24 * 365;
+    now.setTime(expireTime);
+    document.cookie = name + '=' + value + '; expires=' + now + ';path=/';
+  }
+      var addEvent = function(element, event, func) {
+    if (element.addEventListener) {
+      element.addEventListener(event, func);
+    } else {
+      var oldFunc = element['on' + event];
+      element['on' + event] = function() {
+        oldFunc.apply(this, arguments);
+        func.apply(this, arguments);
+      };
+    }
+  }
+  var _removed = false;
+  var form_to_submit = document.getElementById('_form_29_');
+  var allInputs = form_to_submit.querySelectorAll('input, select, textarea'), tooltips = [], submitted = false;
+
+  var getUrlParam = function(name) {
+    var regexStr = '[\?&]' + name + '=([^&#]*)';
+    var results = new RegExp(regexStr, 'i').exec(window.location.href);
+    return results != undefined ? decodeURIComponent(results[1]) : false;
+  };
+
+  for (var i = 0; i < allInputs.length; i++) {
+    var regexStr = "field\\[(\\d+)\\]";
+    var results = new RegExp(regexStr).exec(allInputs[i].name);
+    if (results != undefined) {
+      allInputs[i].dataset.name = window.cfields[results[1]];
+    } else {
+      allInputs[i].dataset.name = allInputs[i].name;
+    }
+    var fieldVal = getUrlParam(allInputs[i].dataset.name);
+
+    if (fieldVal) {
+      if (allInputs[i].type == "radio" || allInputs[i].type == "checkbox") {
+        if (allInputs[i].value == fieldVal) {
+          allInputs[i].checked = true;
+        }
+      } else {
+        allInputs[i].value = fieldVal;
+      }
+    }
+  }
+
+  var remove_tooltips = function() {
+    for (var i = 0; i < tooltips.length; i++) {
+      tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
+    }
+      tooltips = [];
+  };
+  var remove_tooltip = function(elem) {
+    for (var i = 0; i < tooltips.length; i++) {
+      if (tooltips[i].elem === elem) {
+        tooltips[i].tip.parentNode.removeChild(tooltips[i].tip);
+        tooltips.splice(i, 1);
+        return;
+      }
+    }
+  };
+  var create_tooltip = function(elem, text) {
+    var tooltip = document.createElement('div'), arrow = document.createElement('div'), inner = document.createElement('div'), new_tooltip = {};
+    if (elem.type != 'radio' && elem.type != 'checkbox') {
+      tooltip.className = '_error';
+      arrow.className = '_error-arrow';
+      inner.className = '_error-inner';
+      inner.innerHTML = text;
+      tooltip.appendChild(arrow);
+      tooltip.appendChild(inner);
+      elem.parentNode.appendChild(tooltip);
+    } else {
+      tooltip.className = '_error-inner _no_arrow';
+      tooltip.innerHTML = text;
+      elem.parentNode.insertBefore(tooltip, elem);
+      new_tooltip.no_arrow = true;
+    }
+    new_tooltip.tip = tooltip;
+    new_tooltip.elem = elem;
+    tooltips.push(new_tooltip);
+    return new_tooltip;
+  };
+  var resize_tooltip = function(tooltip) {
+    var rect = tooltip.elem.getBoundingClientRect();
+    var doc = document.documentElement, scrollPosition = rect.top - ((window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0));
+    if (scrollPosition < 40) {
+      tooltip.tip.className = tooltip.tip.className.replace(/ ?(_above|_below) ?/g, '') + ' _below';
+    } else {
+      tooltip.tip.className = tooltip.tip.className.replace(/ ?(_above|_below) ?/g, '') + ' _above';
+    }
+  };
+  var resize_tooltips = function() {
+    if (_removed) return;
+    for (var i = 0; i < tooltips.length; i++) {
+      if (!tooltips[i].no_arrow) resize_tooltip(tooltips[i]);
+    }
+  };
+  var validate_field = function(elem, remove) {
+    var tooltip = null, value = elem.value, no_error = true;
+    remove ? remove_tooltip(elem) : false;
+    if (elem.type != 'checkbox') elem.className = elem.className.replace(/ ?_has_error ?/g, '');
+    if (elem.getAttribute('required') !== null) {
+      if (elem.type == 'radio' || (elem.type == 'checkbox' && /any/.test(elem.className))) {
+        var elems = form_to_submit.elements[elem.name];
+        if (!(elems instanceof NodeList || elems instanceof HTMLCollection) || elems.length <= 1) {
+          no_error = elem.checked;
+        }
+        else {
+          no_error = false;
+          for (var i = 0; i < elems.length; i++) {
+            if (elems[i].checked) no_error = true;
+          }
+        }
+        if (!no_error) {
+          tooltip = create_tooltip(elem, "Please select an option.");
+        }
+      } else if (elem.type =='checkbox') {
+        var elems = form_to_submit.elements[elem.name], found = false, err = [];
+        no_error = true;
+        for (var i = 0; i < elems.length; i++) {
+          if (elems[i].getAttribute('required') === null) continue;
+          if (!found && elems[i] !== elem) return true;
+          found = true;
+          elems[i].className = elems[i].className.replace(/ ?_has_error ?/g, '');
+          if (!elems[i].checked) {
+            no_error = false;
+            elems[i].className = elems[i].className + ' _has_error';
+            err.push("Checking %s is required".replace("%s", elems[i].value));
+          }
+        }
+        if (!no_error) {
+          tooltip = create_tooltip(elem, err.join('<br/>'));
+        }
+      } else if (elem.tagName == 'SELECT') {
+        var selected = true;
+        if (elem.multiple) {
+          selected = false;
+          for (var i = 0; i < elem.options.length; i++) {
+            if (elem.options[i].selected) {
+              selected = true;
+              break;
+            }
+          }
+        } else {
+          for (var i = 0; i < elem.options.length; i++) {
+            if (elem.options[i].selected && !elem.options[i].value) {
+              selected = false;
+            }
+          }
+        }
+        if (!selected) {
+          elem.className = elem.className + ' _has_error';
+          no_error = false;
+          tooltip = create_tooltip(elem, "Please select an option.");
+        }
+      } else if (value === undefined || value === null || value === '') {
+        elem.className = elem.className + ' _has_error';
+        no_error = false;
+        tooltip = create_tooltip(elem, "This field is required.");
+      }
+    }
+    if (no_error && elem.name == 'email') {
+      if (!value.match(/^[\+_a-z0-9-'&=]+(\.[\+_a-z0-9-']+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i)) {
+        elem.className = elem.className + ' _has_error';
+        no_error = false;
+        tooltip = create_tooltip(elem, "Enter a valid email address.");
+      }
+    }
+    if (no_error && /date_field/.test(elem.className)) {
+      if (!value.match(/^\d\d\d\d-\d\d-\d\d$/)) {
+        elem.className = elem.className + ' _has_error';
+        no_error = false;
+        tooltip = create_tooltip(elem, "Enter a valid date.");
+      }
+    }
+    tooltip ? resize_tooltip(tooltip) : false;
+    return no_error;
+  };
+  var needs_validate = function(el) {
+    return el.name == 'email' || el.getAttribute('required') !== null;
+  };
+  var validate_form = function(e) {
+    var err = form_to_submit.querySelector('._form_error'), no_error = true;
+    if (!submitted) {
+      submitted = true;
+      for (var i = 0, len = allInputs.length; i < len; i++) {
+        var input = allInputs[i];
+        if (needs_validate(input)) {
+          if (input.type == 'text') {
+            addEvent(input, 'blur', function() {
+              this.value = this.value.trim();
+              validate_field(this, true);
+            });
+            addEvent(input, 'input', function() {
+              validate_field(this, true);
+            });
+          } else if (input.type == 'radio' || input.type == 'checkbox') {
+            (function(el) {
+              var radios = form_to_submit.elements[el.name];
+              for (var i = 0; i < radios.length; i++) {
+                addEvent(radios[i], 'click', function() {
+                  validate_field(el, true);
+                });
+              }
+            })(input);
+          } else if (input.tagName == 'SELECT') {
+            addEvent(input, 'change', function() {
+              validate_field(this, true);
+            });
+          } else if (input.type == 'textarea'){
+            addEvent(input, 'input', function() {
+              validate_field(this, true);
+            });
+          }
+        }
+      }
+    }
+    remove_tooltips();
+    for (var i = 0, len = allInputs.length; i < len; i++) {
+      var elem = allInputs[i];
+      if (needs_validate(elem)) {
+        if (elem.tagName.toLowerCase() !== "select") {
+          elem.value = elem.value.trim();
+        }
+        validate_field(elem) ? true : no_error = false;
+      }
+    }
+    if (!no_error && e) {
+      e.preventDefault();
+    }
+    resize_tooltips();
+    return no_error;
+  };
+  addEvent(window, 'resize', resize_tooltips);
+  addEvent(window, 'scroll', resize_tooltips);
+  window['recaptcha_callback'] = function() {
+  // Get all recaptchas in the DOM (there may be more than one form on the page).
+  var recaptchas = document.getElementsByClassName("g-recaptcha");
+  for (var i in recaptchas) {
+    // Set the recaptcha element ID, so the recaptcha can be applied to each element.
+    var recaptcha_id = "recaptcha_" + i;
+    recaptchas[i].id = recaptcha_id;
+    var el = document.getElementById(recaptcha_id);
+    if (el != null) {
+      var sitekey = el.getAttribute("data-sitekey");
+      var stoken = el.getAttribute("data-stoken");
+      grecaptcha.render(recaptcha_id, {"sitekey":sitekey,"stoken":stoken});
+    }
+  }
+};  _load_script("//www.google.com/recaptcha/api.js?onload=recaptcha_callback&render=explicit");
+  window._old_serialize = null;
+  if (typeof serialize !== 'undefined') window._old_serialize = window.serialize;
+  _load_script("//d3rxaij56vjege.cloudfront.net/form-serialize/0.3/serialize.min.js", function() {
+    window._form_serialize = window.serialize;
+    if (window._old_serialize) window.serialize = window._old_serialize;
+  });
+  var form_submit = function(e) {
+    e.preventDefault();
+    if (validate_form()) {
+      // use this trick to get the submit button & disable it using plain javascript
+      document.querySelector('#_form_29_submit').disabled = true;
+            var serialized = _form_serialize(document.getElementById('_form_29_'));
+      var err = form_to_submit.querySelector('._form_error');
+      err ? err.parentNode.removeChild(err) : false;
+      _load_script('https://grupoopsa.activehosted.com/proc.php?' + serialized + '&jsonp=true');
+    }
+    return false;
+  };
+  addEvent(form_to_submit, 'submit', form_submit);
+})();
+
+</script>
+<!--/fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/Widgets/WidgetNewsletter.csp, e:.000277 -->
+
+					</div>
+					
+					<aside class="NotaRelacionada">
+						<header class="TitleRelacionadas"><span id="titleRel">Noticias <b>relacionadas</b></span></header>
+						
+						
+						
+						
+							
+								            
+								    
+								<article class="MasRelacionadas">
+									<figure class="image">
+										<a href="http://www.diez.hn/notodoesfutbol/1060984-498/utila-el-lugar-perfecto-para-practicar-el-buceo" class="photoRel">               
+											<img width="100%" alt="Utila el lugar perfecto para practicar el buceo" src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=wW692FWgEmXPD5CRVEtlOs$daE2N3K4ZzOUsqbU5sYvxpDB1BRIX7s2DvNYrTH196FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">
+										</a>
+									</figure>
+									<a href="http://www.diez.hn/notodoesfutbol/1060984-498/utila-el-lugar-perfecto-para-practicar-el-buceo" class="contentRel">
+										<h6></h6>
+										<h3>Utila el lugar perfecto para practicar el buceo"</h3>
+									</a>
+								</article>
+							
+							
+						
+						
+						
+							
+								            
+								    
+								<article class="MasRelacionadas">
+									<figure class="image">
+										<a href="http://www.diez.hn/notodoesfutbol/1060586-498/la-cuenca-del-río-cangrejal-tierra-de-los-deportes-extremos" class="photoRel">               
+											<img width="100%" alt="La Cuenca del Río Cangrejal, tierra de los deportes extremos" src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=BJ9GcbyBUGGSDLqWXuKyIs$daE2N3K4ZzOUsqbU5sYsW2_vfc0sHlq5cLS1OZOMQ6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">
+										</a>
+									</figure>
+									<a href="http://www.diez.hn/notodoesfutbol/1060586-498/la-cuenca-del-río-cangrejal-tierra-de-los-deportes-extremos" class="contentRel">
+										<h6></h6>
+										<h3>La Cuenca del Río Cangrejal, tierra de los deportes extremos"</h3>
+									</a>
+								</article>
+							
+							
+						
+						
+						
+							
+								            
+								    
+								<article class="MasRelacionadas">
+									<figure class="image">
+										<a href="http://www.diez.hn/notodoesfutbol/1300346-498/deportes-extremos-juegos-panamericanos-lima-peru-2019" class="photoRel">               
+											<img width="100%" alt="Los tres deportes extremos que van a ver en los Juegos Panamericanos de Lima, Perú" src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=ta_HGaOhq0$AYKPt5fKwg8$daE2N3K4ZzOUsqbU5sYs3Cynwq5JMwfz0YN45Gpnf6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">
+										</a>
+									</figure>
+									<a href="http://www.diez.hn/notodoesfutbol/1300346-498/deportes-extremos-juegos-panamericanos-lima-peru-2019" class="contentRel">
+										<h6></h6>
+										<h3>Los tres deportes extremos que van a ver en los Juegos Panamericanos de Lima, Perú"</h3>
+									</a>
+								</article>
+							
+							
+						
+					</aside>
+					
+                    <aside id="comments" style="">                    
+                        <div class="fb-comments" data-mobile="true" data-href="http://www.diez.hn/notodoesfutbol/1360126-498/deportes-mas-extremos-del-mundo" data-numposts="30"></div> 
+                    </aside>
+					
+					
+					
+                </article>
+            </div>
+
+            <!--Lateral Derecho-->
+            
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/lateralDerecho.csp -->
+<aside class="adright"><!--publicidad lateral derecha-->
+	<div id='div-gpt-ad-1524155259451-1' style="visibility:inherit!important">
+	<script>
+	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1524155259451-1'); });
+	</script>
+	</div>
+</aside>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/lateralDerecho.csp, e:.000102 -->
+
+        </div>
+    </section>
+    
+    <section id="s1">
+        <aside class="left">
+<!-- fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/Widgets/WidgetVideosDesktop.csp -->
+<article class="x2">
+	<header>
+		<a href="http://www.diez.hn/videos/" ><div class="nameSection">VIDEOS</div></a>
+		<a href="http://www.diez.hn/videos/" ><div class="iconPlay"></div></a>
+	</header>
+	
+				
+			<aside class="Bgvideo">
+				<figure>			
+					<a href="http://www.diez.hn/videos/" ><h4>Videos</h4></a>
+					<a href="/videos/mid-FN7rD6PN" title="Denovan Torres: "Terminé contrato con Marathón; antes de iniciar el torneo tuve ofertas de Tegucigalpa"">
+						<div class="play"></div>
+						<span class="filtro"></span>
+						<h2>Denovan Torres: "Terminé contrato con Marathón; antes de iniciar el torneo tuve ofertas de Tegucigalpa"</h2>
+						<img src="https://cdn.jwplayer.com/v2/media/FN7rD6PN/poster.jpg?width=320" alt="Denovan Torres: "Terminé contrato con Marathón; antes de iniciar el torneo tuve ofertas de Tegucigalpa"">
+					</a>
+				</figure>
+			</aside> 
+			
+	
+			
+				
+				<aside class="videos slider">
+				
+					<div>
+						<aside id="Smallvideo">
+						  <figure>
+						  	<a href="/videos/mid-Z5Pbwl90" title="¡Feliz viaje, maestro! La leyenda hondureña Chelato Uclés ha sido sepultado en Tegucigalpa">							
+								<div class="play"></div>
+								<span class="filtro"></span>
+								<h2>¡Feliz viaje, maestro! La leyenda hondureña Chelato Uclés ha sido sepultado en Tegucigalpa</h2>
+								<img src="https://cdn.jwplayer.com/v2/media/Z5Pbwl90/poster.jpg?width=320" alt="¡Feliz viaje, maestro! La leyenda hondureña Chelato Uclés ha sido sepultado en Tegucigalpa">
+							</a>
+						  </figure>
+						</aside>
+					</div>
+				
+			
+	
+			
+				
+					<div>
+						<aside id="Smallvideo">
+						  <figure>
+						  	<a href="/videos/mid-4TUfS9x5" title="¡No pudo más! Jenny Fernández se quebró en lágrimas en Diez TV al hablar de Chelato Uclés">							
+								<div class="play"></div>
+								<span class="filtro"></span>
+								<h2>¡No pudo más! Jenny Fernández se quebró en lágrimas en Diez TV al hablar de Chelato Uclés</h2>
+								<img src="https://cdn.jwplayer.com/v2/media/4TUfS9x5/poster.jpg?width=320" alt="¡No pudo más! Jenny Fernández se quebró en lágrimas en Diez TV al hablar de Chelato Uclés">
+							</a>
+						  </figure>
+						</aside>
+					</div>
+				
+			
+	
+			
+				
+					<div>
+						<aside id="Smallvideo">
+						  <figure>
+						  	<a href="/videos/mid-mviOyf5l" title="Pedro Troglio fue a despedirse de Chelato Uclés: "Vine a rendirle homenaje a alguien muy importante para el fútbol hondureño"">							
+								<div class="play"></div>
+								<span class="filtro"></span>
+								<h2>Pedro Troglio fue a despedirse de Chelato Uclés: "Vine a rendirle homenaje a alguien muy importante para el fútbol hondureño"</h2>
+								<img src="https://cdn.jwplayer.com/v2/media/mviOyf5l/poster.jpg?width=320" alt="Pedro Troglio fue a despedirse de Chelato Uclés: "Vine a rendirle homenaje a alguien muy importante para el fútbol hondureño"">
+							</a>
+						  </figure>
+						</aside>
+					</div>
+				
+			
+	
+			
+				
+					<div>
+						<aside id="Smallvideo">
+						  <figure>
+						  	<a href="/videos/mid-Tbm1lE4D" title="Marathón analiza la posible salida de Héctor Vargas: "Estamos pensando qué es lo mejor para la institución"">							
+								<div class="play"></div>
+								<span class="filtro"></span>
+								<h2>Marathón analiza la posible salida de Héctor Vargas: "Estamos pensando qué es lo mejor para la institución"</h2>
+								<img src="https://cdn.jwplayer.com/v2/media/Tbm1lE4D/poster.jpg?width=320" alt="Marathón analiza la posible salida de Héctor Vargas: "Estamos pensando qué es lo mejor para la institución"">
+							</a>
+						  </figure>
+						</aside>
+					</div>
+				
+			
+	
+			
+				
+					<div>
+						<aside id="Smallvideo">
+						  <figure>
+						  	<a href="/videos/mid-gMGVQZsT" title="Fabián Coito le dio el último adiós a Chelato Uclés: "Fue un grande del fútbol hondureño y mundial"">							
+								<div class="play"></div>
+								<span class="filtro"></span>
+								<h2>Fabián Coito le dio el último adiós a Chelato Uclés: "Fue un grande del fútbol hondureño y mundial"</h2>
+								<img src="https://cdn.jwplayer.com/v2/media/gMGVQZsT/poster.jpg?width=320" alt="Fabián Coito le dio el último adiós a Chelato Uclés: "Fue un grande del fútbol hondureño y mundial"">
+							</a>
+						  </figure>
+						</aside>
+					</div>
+				
+			
+	
+			
+				
+					<div>
+						<aside id="Smallvideo">
+						  <figure>
+						  	<a href="/videos/mid-9Tgy0sAl" title="Chelato Uclés, el niño que quiso ser militar, pero que se convirtió en un genio del fútbol">							
+								<div class="play"></div>
+								<span class="filtro"></span>
+								<h2>Chelato Uclés, el niño que quiso ser militar, pero que se convirtió en un genio del fútbol</h2>
+								<img src="https://cdn.jwplayer.com/v2/media/9Tgy0sAl/poster.jpg?width=320" alt="Chelato Uclés, el niño que quiso ser militar, pero que se convirtió en un genio del fútbol">
+							</a>
+						  </figure>
+						</aside>
+					</div>
+				
+			
+	
+			
+				
+					<div>
+						<aside id="Smallvideo">
+						  <figure>
+						  	<a href="/videos/mid-5Oi1QjiW" title="Manchester United le propinó tremenda paliza a la Roma en la semifinales de la Europa League">							
+								<div class="play"></div>
+								<span class="filtro"></span>
+								<h2>Manchester United le propinó tremenda paliza a la Roma en la semifinales de la Europa League</h2>
+								<img src="https://cdn.jwplayer.com/v2/media/5Oi1QjiW/poster.jpg?width=320" alt="Manchester United le propinó tremenda paliza a la Roma en la semifinales de la Europa League">
+							</a>
+						  </figure>
+						</aside>
+					</div>
+				
+			
+	
+			
+				
+					<div>
+						<aside id="Smallvideo">
+						  <figure>
+						  	<a href="/videos/mid-hIUZXQiT" title="Le dan la última vuelta olímpica a Chelato Uclés antes de retirarlo del estadio Nacional">							
+								<div class="play"></div>
+								<span class="filtro"></span>
+								<h2>Le dan la última vuelta olímpica a Chelato Uclés antes de retirarlo del estadio Nacional</h2>
+								<img src="https://cdn.jwplayer.com/v2/media/hIUZXQiT/poster.jpg?width=320" alt="Le dan la última vuelta olímpica a Chelato Uclés antes de retirarlo del estadio Nacional">
+							</a>
+						  </figure>
+						</aside>
+					</div>
+				
+			
+	
+			
+				
+					<div>
+						<aside id="Smallvideo">
+						  <figure>
+						  	<a href="/videos/mid-uTPrDZte" title="La humilde y pequeña Soledad, la aldea de El Paraíso que vio nacer al maestro Chelato Uclés">							
+								<div class="play"></div>
+								<span class="filtro"></span>
+								<h2>La humilde y pequeña Soledad, la aldea de El Paraíso que vio nacer al maestro Chelato Uclés</h2>
+								<img src="https://cdn.jwplayer.com/v2/media/uTPrDZte/poster.jpg?width=320" alt="La humilde y pequeña Soledad, la aldea de El Paraíso que vio nacer al maestro Chelato Uclés">
+							</a>
+						  </figure>
+						</aside>
+					</div>
+				
+				</aside>
+				
+			
+		   
+</article>
+<!--/fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/Widgets/WidgetVideosDesktop.csp, cache(10), e:.000256 -->
+</aside>
+        <aside class="right">
+			
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/bannerD.csp -->
+<aside id="ad300x250">
+	<div id='div-gpt-ad-1524155259451-5' style="visibility:inherit!important">
+	<script>
+	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1524155259451-5'); });
+	</script>
+	</div>
+</aside>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/bannerD.csp, cache(20), e:.000155 -->
+
+			
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/bannerE.csp -->
+<aside id="ad300x250">
+	<div id='div-gpt-ad-1524155259451-6' style="visibility:inherit!important">
+	<script>
+	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1524155259451-6'); });
+	</script>
+	</div>
+</aside>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/bannerE.csp, cache(20), e:.000153 -->
+
+		</aside>
+    </section>
+    
+    <!--Megabanner Medio-->
+    
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/megabannerMedio.csp -->
+<aside class="ad728x90">
+	<div id='div-gpt-ad-1524155259451-10' style="visibility:inherit!important">
+	<script>
+	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1524155259451-9'); });
+	</script>
+	</div>
+</aside>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/megabannerMedio.csp, e:.000076 -->
+    
+
+    <section id="s2">
+        <!--Fotogaleria-->
+        
+<!-- fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/Widgets/WidgetFotogaleriasDesktop.csp -->
+<header>
+	<a href="http://www.diez.hn/fotogalerias/" ><div class="nameSection"><b>FOTO</b>GALER&Iacute;AS</div></a>
+	<a href="http://www.diez.hn/fotogalerias/" ><div class="iconGallery"></div></a>
+</header>
+<aside id="galerias" class="galerias slider"><!--slider de fotogalerias-->
+	
+	
+		
+		<div>
+			<aside id="SmallGallery">
+			  <figure>
+				<a href="http://www.diez.hn/fotogalerias/1460652-499/fichajes-honduras-motagua-tiene-tres-altas-y-va-por-una-joyita-olimpia" >
+				  <div class="photo"></div>
+				  
+				  <span class="filtro"></span>
+				  <h2>Fichajes: Motagua tiene tres altas y va por una 'joyita'; Olimpia perder&iacute;a una pieza y hondure&ntilde;o con ofertas en Europa</h2>
+				  <img alt="Fichajes: Motagua tiene tres altas y va por una 'joyita'; Olimpia perder&iacute;a una pieza y hondure&ntilde;o con ofertas en Europa" src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=vpzpJcMVqSmQX5t$Zw$2Mc$daE2N3K4ZzOUsqbU5sYuwZS3Eumo17EeNmX6473YX6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">
+				</a>
+			  </figure>
+			</aside>
+		</div>
+	
+	
+	
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/KillVariablesHistoria.csp -->
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/KillVariablesHistoria.csp, e:.000095 -->
+	
+	
+	
+	
+		
+		<div>
+			<aside id="SmallGallery">
+			  <figure>
+				<a href="http://www.diez.hn/fotogalerias/1460643-499/chelato-ucles-entierro-sepultado-fotos-tegucigalpa-honduras-cementerio-iglesia-misa-mundial" >
+				  <div class="photo"></div>
+				  
+				  <span class="filtro"></span>
+				  <h2>El maestro ya brilla en el cielo: así fue el último adiós de Chelato Uclés en medio de lágrimas</h2>
+				  <img alt="El maestro ya brilla en el cielo: así fue el último adiós de Chelato Uclés en medio de lágrimas" src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=qHwEb$RCw3IH8P67RbHTFs$daE2N3K4ZzOUsqbU5sYvvq7vZnuRot$6eOvLDKgoR6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">
+				</a>
+			  </figure>
+			</aside>
+		</div>
+	
+	
+	
+		
+		<div>
+			<aside id="SmallGallery">
+			  <figure>
+				<a href="http://www.diez.hn/fotogalerias/1460532-499/imagenes-futuristas-simulan-como-se-veria-nuevo-santiago-bernabeu-real-madrid-estadio" >
+				  <div class="photo"></div>
+				  
+				  <span class="filtro"></span>
+				  <h2>¡Imágenes futuristas! Simulan cómo se vería el nuevo Santiago Bernabéu terminado; así marchan las obras</h2>
+				  <img alt="¡Imágenes futuristas! Simulan cómo se vería el nuevo Santiago Bernabéu terminado; así marchan las obras" src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=0sgQ5$tVKhmygU$qJCSHJ8$daE2N3K4ZzOUsqbU5sYv1O2j9_BmAk4ZBxZFs9h8n6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">
+				</a>
+			  </figure>
+			</aside>
+		</div>
+	
+	
+	
+		
+		<div>
+			<aside id="SmallGallery">
+			  <figure>
+				<a href="http://www.diez.hn/fotogalerias/1460509-499/uno-dio-un-beso-con-la-mano-al-ataúd-las-famosos-que" >
+				  <div class="photo"></div>
+				  
+				  <span class="filtro"></span>
+				  <h2>¡Uno dio un beso con la mano al ataúd! Las famosos que llegaron a dar el último adiós a Chelato Uclés</h2>
+				  <img alt="¡Uno dio un beso con la mano al ataúd! Las famosos que llegaron a dar el último adiós a Chelato Uclés" src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=M1642Ats_iJpNd2ImllpCc$daE2N3K4ZzOUsqbU5sYuRdXcIgUePsN0tO5yCBs6$6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">
+				</a>
+			  </figure>
+			</aside>
+		</div>
+	
+	
+	
+		
+		<div>
+			<aside id="SmallGallery">
+			  <figure>
+				<a href="http://www.diez.hn/fotogalerias/1460482-499/el-equipo-de-españa-que-seguía-su-libreta-y-habitación-las-fotos" >
+				  <div class="photo"></div>
+				  
+				  <span class="filtro"></span>
+				  <h2>¡El equipo de España que seguía, su libreta y habitación! Las fotos que no habías visto de Chelato Uclés</h2>
+				  <img alt="¡El equipo de España que seguía, su libreta y habitación! Las fotos que no habías visto de Chelato Uclés" src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=yVD5DoAjyYCGTAg_zRcoEs$daE2N3K4ZzOUsqbU5sYvQJv_ASDCgOohx8mLNT3m$6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">
+				</a>
+			  </figure>
+			</aside>
+		</div>
+	
+	
+	
+		
+		<div>
+			<aside id="SmallGallery">
+			  <figure>
+				<a href="http://www.diez.hn/fotogalerias/1460485-499/diletta-leotta-escandalo-captada-besandose-otro-hombre-hijo-propietario-roma" >
+				  <div class="photo"></div>
+				  
+				  <span class="filtro"></span>
+				  <h2>Con otro hombre: Diletta Leotta, "cazada" besándose con el hijo del propietario de la Roma</h2>
+				  <img alt="Con otro hombre: Diletta Leotta, "cazada" besándose con el hijo del propietario de la Roma" src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=jHuwXwFqq1U9lDFY_RS6Mc$daE2N3K4ZzOUsqbU5sYulW8JQJWpisp$QsN$EY4v16FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">
+				</a>
+			  </figure>
+			</aside>
+		</div>
+	
+	
+	
+		
+		<div>
+			<aside id="SmallGallery">
+			  <figure>
+				<a href="http://www.diez.hn/fotogalerias/1460460-499/chelato-ucles-muerte-mensaje-hija-zoe-maria-herrera-honduras-fotos-real-madrid-ultimo-adios" >
+				  <div class="photo"></div>
+				  
+				  <span class="filtro"></span>
+				  <h2>El emotivo mensaje de la hija de Chelato Uclés tras la muerte de su padre: "Esto duele mucho"</h2>
+				  <img alt="El emotivo mensaje de la hija de Chelato Uclés tras la muerte de su padre: "Esto duele mucho"" src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=CDO3wK3$5icMTQJWTCM7_8$daE2N3K4ZzOUsqbU5sYtOc$36zlvkqld_NibLjFM76FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">
+				</a>
+			  </figure>
+			</aside>
+		</div>
+	
+	
+	
+		
+		<div>
+			<aside id="SmallGallery">
+			  <figure>
+				<a href="http://www.diez.hn/fotogalerias/1460458-499/chelato-ucles-fotos-casa-intimidad-tegucigalpa-murio-jose-dela-paz-herrera" >
+				  <div class="photo"></div>
+				  
+				  <span class="filtro"></span>
+				  <h2>Con un tesoro adentro: Así fue la humilde casa donde Chelato Uclés vivió casi toda su vida</h2>
+				  <img alt="Con un tesoro adentro: Así fue la humilde casa donde Chelato Uclés vivió casi toda su vida" src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=a3WU3SGFVaF5NEYt6J_eIM$daE2N3K4ZzOUsqbU5sYvnv04TgKFqR2qyICVAJ6sZ6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">
+				</a>
+			  </figure>
+			</aside>
+		</div>
+	
+	
+	
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/KillVariablesHistoria.csp -->
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/Utilitarios/KillVariablesHistoria.csp, e:.000149 -->
+	
+</aside>
+<!--/fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/Widgets/WidgetFotogaleriasDesktop.csp, cache(10), e:.000224 -->
+
+    </section>
+    
+    <section id="s10">
+        <!--Mas noticias-->
+        
+<!-- fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/Widgets/WidgetMasNoticiasDesktop.csp -->
+
+
+
+<h2>Mas Noticias</h2>
+<aside id="masnoticias" class="masnoticias slider">
+	
+		
+			
+				
+				<div>
+					<figure>
+						<img src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=1qYHtwvPzbcj_EoljX1cfM$daE2N3K4ZzOUsqbU5sYuJLx9VqabK2aXVUWLQaaB16FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">						
+					</figure>
+					<a href="http://www.diez.hn/notodoesfutbol/" class="section" >					
+						No todo es F&uacute;tbol
+					</a>
+					<a href="http://www.diez.hn/notodoesfutbol/1459112-498/villa-olimpica-tegucigalpa-honduras-atletas-hondurenos-tokio-damnificados-eta-iota" >
+						<h4>La Villa Olímpica, casa de los atletas hondureños, sigue abandonada, deteriorada y sin fecha de reapertura</h4>
+					</a>
+				</div>		  	
+			
+		
+			
+				
+				<div>
+					<figure>
+						<img src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=WWRuF8$9_SYYzt$KFoJ4Yc$daE2N3K4ZzOUsqbU5sYvUYgg4ZXjZlbpQ5oIMPF7a6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">						
+					</figure>
+					<a href="http://www.diez.hn/inicio/" class="section" >					
+						Inicio
+					</a>
+					<a href="http://www.diez.hn/inicio/1459288-496/salvador-jimenez-honduras-sin-atletas-clasificados-los-juegos-olimpicos-tokio-2021" >
+						<h4>Honduras, sin atletas clasificados a Juegos Olímpicos de Tokio a menos de dos meses para cierre de inscripciones</h4>
+					</a>
+				</div>		  	
+			
+		
+			
+				
+				<div>
+					<figure>
+						<img src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=zguG5XF$d5V0VmSZ8UYaWM$daE2N3K4ZzOUsqbU5sYsYMqJLpCEosnlb84CoBUXg6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">						
+					</figure>
+					<a href="http://www.diez.hn/notodoesfutbol/" class="section" >					
+						No todo es F&uacute;tbol
+					</a>
+					<a href="http://www.diez.hn/notodoesfutbol/1459332-498/la-espeluznante-lesion-en-la-ufc-chris-weidman-fractura-perone-tibia-uriah-hall" >
+						<h4>Lo más terrorífico que verás hoy: La espeluznante lesión en la UFC que le está dando vuelta al mundo</h4>
+					</a>
+				</div>		  	
+			
+		
+	
+		
+			
+				
+				<div>
+					<figure>
+						<img src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=N4cyTNrsaC9aRKANNqAv$M$daE2N3K4ZzOUsqbU5sYvOttXOAm86FKEEiMYirQ5C6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">						
+					</figure>
+					<a href="http://www.diez.hn/notodoesfutbol/" class="section" >					
+						No todo es F&uacute;tbol
+					</a>
+					<a href="http://www.diez.hn/notodoesfutbol/1459190-498/donald-trump-arremete-contra-lebron-james-tilda-de-racista-en-twitter-nba" >
+						<h4>Polémica: Donald Trump arremete contra LeBron James y lo tilda de "racista y causar división" en Twitter</h4>
+					</a>
+				</div>		  	
+			
+		
+			
+				
+				<div>
+					<figure>
+						<img src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=nqV1JFNGEGwFzQJX8vgqEM$daE2N3K4ZzOUsqbU5sYt1b2v9DnCA5tbuspzkbRlv6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">						
+					</figure>
+					<a href="http://www.diez.hn/notodoesfutbol/" class="section" >					
+						No todo es F&uacute;tbol
+					</a>
+					<a href="http://www.diez.hn/notodoesfutbol/1458814-498/sara-pastrana-nadadora-hondurena-comite-olimpico-federacion-natacion-honduras-tokio-2021" >
+						<h4>Sara Pastrana: “Hay familias que viven de la natación, incluyendo la mía, y nos están olvidando, pido conciencia”</h4>
+					</a>
+				</div>		  	
+			
+		
+			
+				
+				<div>
+					<figure>
+						<img src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=XTDlQHWp5JGn2vghbDV6hc$daE2N3K4ZzOUsqbU5sYtGvcJ4tW1BN_Wb5IrjJWcC6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">						
+					</figure>
+					<a href="http://www.diez.hn/notodoesfutbol/" class="section" >					
+						No todo es F&uacute;tbol
+					</a>
+					<a href="http://www.diez.hn/notodoesfutbol/1457712-498/triste-realidad-sara-pastrana-nadadora-olimpica-renuncia-a-tokio-2021-con-honduras-natacion" >
+						<h4>Triste realidad: Sara Pastrana, nadadora olímpica, renuncia a Tokio 2021 con Honduras por falta de apoyo</h4>
+					</a>
+				</div>		  	
+			
+		
+	 
+	
+</aside>
+
+
+<!--/fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/Widgets/WidgetMasNoticiasDesktop.csp, cache(10), e:.000262 -->
+
+    </section>
+    
+	
+
+
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/megabannerInferior.csp -->
+<aside class="ad728x90">
+	<div id='div-gpt-ad-1524155259451-9' style="visibility:inherit!important">
+	<script>
+	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1524155259451-10'); });
+	</script>
+	</div>
+</aside>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/adFiles/dfp/megabannerInferior.csp, e:.000098 -->
+ 
+	
+
+<script type="text/javascript">
+	function addLink() {
+	var body_element = document.getElementById('nota');
+	var selection;
+	selection = window.getSelection();
+	var pagelink = "La reproducci\u00F3n de este contenido sin autorizaci\u00F3n previa est\u00e1 prohibida.<br /><br /> Leer esta nota: <a href='"+document.location.href+"'>"+document.location.href+"</a><br />Copyright &copy; www.diez.hn"; 
+	var copytext =  pagelink;
+	var newdiv = document.createElement('div');
+	newdiv.style.position='absolute';
+	newdiv.style.left='-99999px';
+	body_element.appendChild(newdiv);
+	newdiv.innerHTML = copytext;
+	selection.selectAllChildren(newdiv);
+	window.setTimeout(function() {
+	body_element.removeChild(newdiv);
+	},0);
+	}
+	document.oncopy = addLink;
+</script>	
+
+
+ 
+
+<!--/fi:/csp/mediapool/sites/Diez/templates/stories/full/v3/DzNoticiaFullWeb.csp, e:.04615 -->
+
+
+<section id="footer">
+	<header>
+		  <a href="http://www.diez.hn">		  
+		  	<img src="data:image/png;base64,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
+">
+		  </a><!--footer logo--> 
+		  <a href="http://www.diez.hn" class="Yellow">
+		  	<p>TODOS LOS DERECHOS RESERVADOS &#174; 2021</p>
+		  </a>		  
+	</header>
+	
+<!-- fi:/csp/mediapool/sites/Diez/assets/cspv3/sectionfiles/FooterLinksDesktop.csp -->
+<aside class="links">
+	<span class="inst fontweight">Nuestras Secciones</span>
+	<a href="http://www.diez.hn/laseleccion/" class="inst" >La Selecci&oacute;n</a>
+	<a href="http://www.diez.hn/liganacionaldehonduras/" class="inst" >Liga Nacional</a>		
+	<a href="http://www.diez.hn/centroamerica/" class="inst" >Centroam&eacute;rica</a>
+	<a href="http://www.diez.hn/legionarios/" class="inst" >Legionarios</a>
+	<a href="http://www.diez.hn/internacionales/" class="inst" >F&uacute;tbol Internacional</a>
+	<a href="http://www.diez.hn/notodoesfutbol/" class="inst" >No todo es f&uacute;tbol</a>
+	<a href="http://www.diez.hn/videos/" class="inst" >Videos</a>	
+</aside>
+
+<aside class="links">
+	<span class="inst fontweight">Sobre nosotros</span>
+	<a href="http://www.diez.hn/servicioalusuario/" class="inst" >Servicio al Usuario</a>
+	<a href="http://www.diez.hn/terminos/" class="inst" >Pol&iacute;ticas de Privacidad</a>
+	<a class="inst" href='http://www.diez.hn/suscribete'>Newsletter</a>
+	<a class="inst" href='http://www.diez.hn/mapadelsitio/'>Mapa del sitio</a>
+	<a href="http://www.diez.hn/rss/" class="inst" >RSS</a>
+	<span class="inst fontweight">S&iacute;guenos en</span>
+	<div class="socialmedia">
+		<a href="https://www.facebook.com/diariodiez/" target="_blank">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDRGMkIyRkQ4QjE0MTFFNkE3MzdERUM5Q0MyNzQzRjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDRGMkIyRkU4QjE0MTFFNkE3MzdERUM5Q0MyNzQzRjgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowNEYyQjJGQjhCMTQxMUU2QTczN0RFQzlDQzI3NDNGOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowNEYyQjJGQzhCMTQxMUU2QTczN0RFQzlDQzI3NDNGOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PpmUxg8AAAVMSURBVHjaxFdrbBRVFP7uY2b2SVvasjwKNMVYCfADjFKBaAhYlF+KMfqP4B9JhPhKxMTEmEiMIj4SNOEP6A9/IcGIxtQYSyKQCCqGR0N5GqDSpcB2l+7ssjsz93pmS1+03c4CwdPcdObumXvOPec7372HrV+vcfw4BmXWgj8QrU9CewKe5vDyYVghG8LyAK2nKsdYwqS3mDHdTOqTaXAafQo4zxj+4kofVNo4BZogPegChyMUOBdIXmhC+nwzhos8cgQ4fHho4rKTQnVDN5Qn4XjkgB1HNNa7XFhqHXmwgpadTv9Jk2GkDMzpjFbiEL1+w7jerfIiXzRccsDAhZP1SHeO/EoaxsgJ0+AwJBmGgJRqobDszdLEamiOgFJFo7V/8E1a4z3N5G7OOa3NRimPuyoX+tWQ4R4wzMLq0ubuSPQ8ZqpvDUPtoJeoxlgOOLd9onxP3W2GcD+nDyJaM9ytSKZfMo3Cz4LpKaN+Uw+dB3I2ucLgBz5cnd5GudyAeyj+Jgi0SxvmnPyhIZZvRSGSAesPq2yYdhazZidLIAmH3I1xK7dBufIWqMqL6ykUioR0PaQbCRm01uio+ZENRexHnakXdqa6Zz+nVb+O1PkQ1I0YIlX5BXVGbosXwDiVG/I3XUyrj+ORBdORqIvBB5nvyN72TlzvzUOI0U4oKm0jkl1jhXvW912r3e7bkW56MrxeSQ50fULVGgqy83zBxcPzp+OD11eiriYy4reDRy7iyjXiDSHGTocrEE+kNqtE6jvN9BU+ubYLiRknHw/HM08OhKV8PkFlKvDa2sdGGQ+EBx/5GrVV0nslarqQVrULs8p7WQescz/v0+pjaGqoGZzrSt5A2/4zJedS6Tyk4BM6wRyxNuQYW6Tn6YRWWImAPKOUgmXKUhQGZG/7KXy84wDiURPRsEkOsCDUMUvBWy69vLWUXqYEDyK7lYohOtb0F49aiJEDLFD99H+qitYqKUJOS7Cd6xJFb920Co0zqglkQyF74en5WNHSVHp+57NfcSmZKelOiAeuFknGVXMlIJo7pw6J2tiIOR+M/nBc4gXHBQuIRiHdmVS8qKnEAb/+tR5dGf5IXssiaxfHJKJxnIjLcgfSiEODFlVk5Y0P29A0swYfvdk6SDa7fjqOXW0dpbQ4rhfcATDuO5ANzunAuYupEgCHg/BqykbH2auYRCA0DFEJK+S4AvunkhSYZMC8zYi/c8sUFRmnw8mn5iSnhz/xvwhxheYnuFDqNwqFff8d0Mjlou286BhnlCt+B7uvmydA84xtV7Vx5tEBqORXuPN7153Yh+OY34cnpS5zI5KDNN09TIvTwQHE6MI6VL3+s67IAeWpjPUp741AOtctON2hPIu7b8tqb4+aIBeEWtyk+8DhY//2n3qs/zSc6AQcjv60E9neZ+qjzMqCrXnrRxw61g1hSDqkCztjiq3zFJ+QD3zCGQgnJ+MiCPmQisndzlxPosVRRqZ0I+rrnofeS40l9soqtfGBB482m2F7iSrjhH8lG34csyC2SYc21ttzpvlFsyAyg+mzTzUi1zGoZ5/Ohp+du6R9L2d6cbkrOau4anQKHn+m89iyo6poDEvpbZ3RzVy0p1gIPUXt1W7G9D1BPI0Ot2itpD5jv5RO+c6Icb8JZWm3YD1fzFkb6KMrd8F1TtGTX9COl9Gif48J6nJM5RZCXzoai7RQ79PEueAXJnbd8+TXTt5soQZ3I20iPW7XVH6xUgoue0y/a4BtpePjCe3JVrpOL+RczbzViPombWo8kvR4gph1H5HML9IsdAmXU4vu+hEd18R/AgwAOawybpvBRKwAAAAASUVORK5CYII="/>
+		</a>
+		<a href="https://twitter.com/diariodiezhn" target="_blank">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDRGMkIyRjk4QjE0MTFFNkE3MzdERUM5Q0MyNzQzRjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDRGMkIyRkE4QjE0MTFFNkE3MzdERUM5Q0MyNzQzRjgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowNEYyQjJGNzhCMTQxMUU2QTczN0RFQzlDQzI3NDNGOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowNEYyQjJGODhCMTQxMUU2QTczN0RFQzlDQzI3NDNGOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pm0X1DcAAAZQSURBVHja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"/>
+		</a>
+		<a href="https://www.instagram.com/diariodiez/" target="_blank">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Nzg4QkY2QTA4QjE0MTFFNkE3MzdERUM5Q0MyNzQzRjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Nzg4QkY2QTE4QjE0MTFFNkE3MzdERUM5Q0MyNzQzRjgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowNEYyQjJGRjhCMTQxMUU2QTczN0RFQzlDQzI3NDNGOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowNEYyQjMwMDhCMTQxMUU2QTczN0RFQzlDQzI3NDNGOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrNuS30AAAZdSURBVHja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"/>
+		</a>
+		<a href="https://www.snapchat.com/add/diariodiez" target="_blank">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTYyMkIwQjM4MDExMTFFNjhFOUVGNTk4QjE4OUIyQjEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTYyMkIwQjQ4MDExMTFFNjhFOUVGNTk4QjE4OUIyQjEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5RDAyODlDMjdGNTcxMUU2OEU5RUY1OThCMTg5QjJCMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1NjIyQjBCMjgwMTExMUU2OEU5RUY1OThCMTg5QjJCMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ps+yv0gAAAYKSURBVHja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"/>
+		</a>
+	</div>    
+</aside>
+
+<!--Portada del Dia-->
+
+<!-- fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/Widgets/WidgetPortadaDelDiaDesktop.csp -->
+<aside class="links">	
+	
+					
+						
+			
+			<a href="https://www.diez.hn/portadadigital" class="inst fontweight">Portada Digital</a>
+			<a href="http://www.diez.hn/portadaimpresa/1460507-495/portada-del-jueves-29-de-abril-del-2021" >
+				<div class="inst portada">
+					<img alt="PORTADA DEL JUEVES 29 DE  ABRIL DEL 2021" src="/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=81DCIrmBz0bmP2vQKRiZm8$daE2N3K4ZzOUsqbU5sYufZNgphhM2x9WE97XSf57w6FB40xiOfUoExWL3M40tfzssyZqpeG_J0TFo7ZhRaDiHC9oxmioMlYVJD0A$3RbIiibgT65kY_CSDiCiUzvHvODrHApbd6ry6YGl5GGOZrs-&amp;CONTENTTYPE=image/jpeg">
+				</div>
+			</a>
+		
+		
+	
+</aside>
+<!--/fi:/csp/mediapool/sites/Diez/templates/stories/summary/v3/Widgets/WidgetPortadaDelDiaDesktop.csp, refresh(10), e:.003801 -->
+
+	
+<aside class="links">
+	<span class="inst fontweight">Nuestras Apps</span>
+	<span class="inst">
+			
+		<div class="downloadsapp" style="width: auto;">
+			<a href="https://play.google.com/store/apps/details?id=hn.diez.android&hl=es_419" target="_blank">
+				<img width="150" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANgAAABLCAYAAAAS0kkAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgRmlyZXdvcmtzIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5RDAyODlCQzdGNTcxMUU2OEU5RUY1OThCMTg5QjJCMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5RDAyODlCRDdGNTcxMUU2OEU5RUY1OThCMTg5QjJCMSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjlEMDI4OUJBN0Y1NzExRTY4RTlFRjU5OEIxODlCMkIxIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjlEMDI4OUJCN0Y1NzExRTY4RTlFRjU5OEIxODlCMkIxIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+pVE6nAAAIpdJREFUeNrsnQmcTuUex//vNmOvJO2y1c2WRIsulWi/0Sap2+hK2qPS4t5b7m2/7UipFCpSSZMSpSiRkH0fZJlpJUIYw8y5z/d55znO+zrvNjPGzHT+H8e873nP8my/578+/ycoLtS6des6vXr16qr+nl+nTp166lS6OizxyCOPnFSwdevWn6ZNm/b1qFGj3h4xYsSs3bt32z9effXV4nNefdhhh4X69+9/X+fOnW/y+XxH5ubmyo8//ij5+fmivnvN6ZFHUVSrVi058MAD+bh1+vTp7/bu3fvBmTNn/rgXwFq2bFlzzJgx7yiO1WHu3LkyYMAAmTx5svz6669SUFCQ8EUeAD2qiGRZ8QW3GjVqyCmnnCI33nijXHzxxZKXl7e6Z8+eVwwfPnwOADMoTMvOzv5cPcx68sknrfT0dKtQJPQO7/COJI9u3bpZu3btAkY5LVq0OAbAaXrttdfu5ewzzzxT5IcrDuYd3lHhjlRxcOWVVwIla8aMGR91795dfK1atTp81qxZsxcvXny4Qp0oBKbMRj3x0KM/q4joRkOHDpXrrrtOpk6derY/IyOjqzp3+LPPPpsSuACVOTzyyKM99PTTT2sstWnTJsN/ySWXnKcUM5k0aZLXMh55FIORpEJLlizRh6JT/EcfffQxv/zyi7YWeuSRR4kltujDTaxcs2aNth/61X/psLNkTPEeeeRRcrRz507+BIJSASM03BTTWGzeXBtrJop1fyzlN544EX1PvHcm85vbtcmWK957Ein3qdTR7b5U6lieOR7kLyp7LI+gM0eigWGuCwaDUq1atYhzyb4n1rkqVapIWlpawmfGe5fb85O5pygWsVTKlurzU6ljeaVgLECVxwqaMmPFadmypaSnp4vf79cWncWLF0tmZqZMmDBBX2fqmJGRIddff73897//tQ09Rx55pPzrX/+Sc889Vw444ABZt26djB07Vl555RX56aef9DX//Oc/5ZxzztFg4R0877fffpMxY8bI66+/HvEOgMo7/v73v8uxxx6rxYfvvvtOXn75Zfnss8/scgcCAf2OevXqyb///W/55ptvIvpi0KBBctxxx8lVV12l33XFFVfI7bffLv/73//kk08+0eV+7bXXpFKlSrrupi83btwo77//vl0uyvzmm2/q36699lpdnmguyPvbt29v188Qnx9//HHdltH3HHHEEfodlStXticRU4Yf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"/>
+			</a>
+	  		<a href="https://itunes.apple.com/hn/app/diario-diez-para-ipad-iphone/id581389616?mt=8" target="_blank">
+	  			<img width="150" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANgAAABLCAYAAAAS0kkAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2tpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0idXVpZDpCREU3RDNBREE0NEFERDExQjk0MjgyNkI5MUI0NkQzMSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo5RDAyODlDMTdGNTcxMUU2OEU5RUY1OThCMTg5QjJCMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo5RDAyODlDMDdGNTcxMUU2OEU5RUY1OThCMTg5QjJCMSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBGaXJld29ya3MgQ1M1IDExLjAuMC40ODQgTWFjaW50b3NoIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RkI3RjExNzQwNzIwNjgxMTkxMDk5NkFCQTRGRTRENDIiIHN0UmVmOmRvY3VtZW50SUQ9InV1aWQ6QkRFN0QzQURBNDRBREQxMUI5NDI4MjZCOTFCNDZEMzEiLz4gPC9yZGY6RGVz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"/>
+			</a>
+		</div>
+	</span>
+</aside>
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/sectionfiles/FooterLinksDesktop.csp, cache(20), e:.000409 -->
+	
+</section>
+<!--termina footer-->
+
+<!--/fi:/csp/mediapool/sites/Diez/templates/sections/v3/DZSectionWeb.csp?sid=326&cid=1360126&fid=498&fullstory=1, e:.058392 -->
+	
+			
+			
+			
+		
+	<script async type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=421861723"></script>
+</body>
+
+<!--/fi:/csp/mediapool/sites/Diez/assets/cspv3/StoryDefault.csp, e:.08107 -->
+
+</html><!--
+Elapsed:.086517
+Globals:14576
+Lines:177582
+-->
